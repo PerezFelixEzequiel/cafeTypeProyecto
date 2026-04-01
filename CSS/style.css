@@ -1,0 +1,79 @@
+/* ESTILOS GENERALES  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background:#000000 ;
+  color: #fff;
+}
+
+/*HEADER*/
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-principal{
+display: flex;
+flex-direction: row;
+gap: 10px;
+}
+
+.logo-principal svg{
+  width: 50px;
+  height: 50px;
+}
+
+.logo-principal h1{
+  margin: 0;
+}
+
+.navegacion ul{
+display: flex;
+flex-direction: row;
+gap: 30px;
+}
+
+.navegacion ul{
+  list-style: none;
+}
+
+.navegacion ul a{
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.navegacion ul a:hover{
+  opacity: 1;
+  color: antiquewhite;
+}
+
+/*MAIN*/
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*BANNER*/
+
+.banner{
+  width: 100%;
+  height: 60vh;
+margin-top: 100px;
+  background-image: url('../assets/granosdecafe.png');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
