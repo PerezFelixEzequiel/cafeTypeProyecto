@@ -84,34 +84,37 @@ main{
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative; /*Esto se agrego para poder poner las Wave Divider Por encima del banner !!!!!ASI QUE REVISAR ESTO !!!!!*/
+  overflow: hidden;
 }
 
 .banner .textBanner{
   width: 50%;
   padding-left: 340px; /* mas adelante mejorar este Padding*/
-  transform: translateY(-60px); /*Revisar que hace esto */
+  transform: translateY(-60px); /*Si saco esto el div.textbanner queda mas abajo!!!!Revisar que hace esto!!!!!! */
 }
 
 .textBanner h2{
   font-weight: 300;
   margin: 0;
-  font-size: 80px;
-  margin-bottom: 10px;
+  font-size: 85px;
+  margin-bottom: 10px; /* para separar de h3*/
   color: #db941a;
   text-shadow: 0 4px 15px rgba(219, 148, 26, 0.4);
 }
 
 .textBanner h3{
   margin-bottom:20px ;
+  font-size: 30px;
 }
 
 .textBanner p{
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.5; /*para separar lineas entre parrafos*/
 }
 
-.textBanner button{ /* Mas adelante mejorar este botón con :HOVER*/
-  margin-top: 20px;
+.textBanner button{ /*!!!REVISAR EL BOTTOM !!! Mas adelante mejorar este botón con :HOVER*/
+  margin-top: 30px;
   padding: 15px 30px;
   background: linear-gradient(45deg, #db941a, #b87a15);
   color: #fff;
@@ -124,4 +127,29 @@ main{
   box-shadow: 0 4px 15px rgba(219, 148, 26, 0.3);
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.wave-divider{ /*REVISAR Y AALIZAR WAVE DIVIDER ¿Como se realizo esto? */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.wave-divider svg{
+  display: block;
+  width: 100%;
+  height: 130px;
+  fill: #c4872a; /* mismo color de la sección de abajo */
+}
+
+/*Carrusel*/
+
+main .tipos-de-cafe{
+  width: 100%;
+  height: 60vh;
+  padding: 80px 50px;
+  background: #c4872a;
+  text-align: center;
 }
