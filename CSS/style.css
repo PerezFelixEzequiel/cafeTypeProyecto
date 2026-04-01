@@ -6,7 +6,7 @@
 }
 
 body{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Bree Serif", serif;
   background:#000000 ;
   color: #fff;
 }
@@ -32,6 +32,10 @@ gap: 10px;
 
 .logo-principal h1{
   margin: 0;
+}
+
+h1 .Titulo-color-type{
+  color: #ba7907;
 }
 
 .navegacion ul{
@@ -68,12 +72,30 @@ main{
 
 .banner{
   width: 100%;
-  height: 60vh;
-margin-top: 100px;
-  background-image: url('../assets/granosdecafe.png');
+  height: 80vh;
+  border: solid 5px #fff;
+  background:  url('../assets/granosdecafe.png');
   background-size: cover;
   background-position: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.banner .textBanner{
+  width: 30%;
+}
+
+.textBanner h2{
+  font-weight: 300;
+  margin: 0;
+  font-size: 80px;
+  margin-bottom: 10px;
+  color: #db941a;
+}
+
+.textBanner h3{
+  margin-bottom:20px ;
+}
+
+.textBanner p{
+  font-size: 18px;
+  line-height: 1.5;
 }
