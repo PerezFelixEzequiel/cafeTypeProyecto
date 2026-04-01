@@ -73,14 +73,23 @@ main{
 .banner{
   width: 100%;
   height: 80vh;
-  border: solid 5px #fff;
-  background:  url('../assets/granosdecafe.png');
+  background: linear-gradient(to right,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.75) 20%,
+      rgba(0, 0, 0, 0.35) 35%,
+      rgba(0, 0, 0, 0) 50%
+    ), url('../assets/granosdecafe.png');
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .banner .textBanner{
-  width: 30%;
+  width: 50%;
+  padding-left: 340px; /* mas adelante mejorar este Padding*/
+  transform: translateY(-60px); /*Revisar que hace esto */
 }
 
 .textBanner h2{
@@ -98,4 +107,26 @@ main{
 .textBanner p{
   font-size: 18px;
   line-height: 1.5;
+}
+
+.textBanner button{
+  margin-top: 20px;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #db941a, #b87a15);
+  color: #fff;
+  border: 2px solid #db941a;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(219, 148, 26, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.textBanner button:hover{
+  background: linear-gradient(45deg, #b87a15, #db941a);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(219, 148, 26, 0.4);
 }
