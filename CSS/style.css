@@ -82,6 +82,7 @@ main .banner{
     ), url('../assets/granosdecafe.png');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -94,7 +95,7 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
 }
 
 
-.containerInf h2{
+.containerInf .tituloBanner{
   font-weight: 100px;
   font-size: 70px;
   margin-bottom: 10px; /* para separar de h3*/
@@ -108,7 +109,7 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
 }
 
 .containerInf p{
-  max-width: 600px;
+  max-width: 500px;
   font-size: 16px;
   line-height: 1.5; /*para separar lineas entre parrafos*/
 }
@@ -143,15 +144,108 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
   display: block;
   width: 100%;
   height: 130px;
-  fill: #c4872a; /* mismo color de la sección de abajo */
+  fill: #fdad35; /* mismo color de la sección de abajo */
 }
 
 /*Carrusel*/
 
-main .cardCarrusel{
-  width: 100%;
-  height: 60vh;
-  padding: 80px 50px;
-  background: #c4872a;
-  text-align: center;
+.sectionCarrusel{
+  background-color: #fdad35;
+  padding: 50px;
+}
+
+.sectionCarrusel .containerInf{
+  display: flex;
+  justify-content: center;
+}
+
+
+/*ESTILOS CARD*/
+
+.containerCard{
+  width: 75%;
+  border: solid;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 15px;
+  gap: 20px;
+  border: 2.5px solid #9e540038;
+  background-color: #ffffff;
+}
+
+/*Tarjeta 1*/
+
+.card1{
+  width: 250px;
+  height: 430px;
+  border: 2.5px solid #9e54001a;
+  border-radius: 25px;
+  color: #532c00;
+  background-color: #fdfbf8;
+  position: relative;
+}
+
+.card1 .cardImg{
+ width: 100%;
+  height: 50%;
+  background-color: #fdad35;
+  background-repeat: no-repeat;
+  background-image: url(../assets/MOPCKUOP.png) ;
+  background-position: center;
+  background-position-y: 10px ;
+  background-size: 150px;
+  border-radius: 25px 25px 0 0;
+}
+
+.card1 h2{
+  margin: 0;
+  font-size: 1.2em;
+  margin-top: 10px  ;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  font-weight: 900;
+}
+
+.origen {
+  font-size: 0.8em;
+  padding: 0px 10px;
+}
+
+.card1 .card1Text{
+  font-size: 0.85em;
+  margin: 0;
+  padding: 10px ;
+}
+
+.origen span{
+  font-weight: bolder;
+}
+
+.card1Etiqueta{
+  background-color:#532c00 ;
+  color: #fdfbf8;
+  width: 125px;
+  position: absolute;
+  border-radius: 25px 20px 20px 0px;
+  padding: 0;
+}
+
+.card1Etiqueta p{
+  font-size:15px; 
+  padding: 4px 10px;
+}
+
+/*Tarjeta 2*/
+
+.card2{
+  width: 450px;
+  border: solid;
+  height: 430px;
+   border: 2.5px solid #9e54001a;
+  border-radius: 25px;
+  color: #532c00;
+  background-color: #fdfbf8;
 }
