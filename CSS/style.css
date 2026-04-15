@@ -53,7 +53,7 @@ flex-direction: row;
 gap: 30px;
 }
 
-.navegacion ul{
+ul{
   list-style: none;
 }
 
@@ -172,8 +172,9 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
   flex-direction: row;
   padding: 15px;
   gap: 20px;
-  border: 2.5px solid #9e540038;
+ 
   background-color: #ffffff;
+  box-shadow: 0 0 10px 5px #0000003d;
 }
 
 /*Tarjeta 1*/
@@ -181,11 +182,11 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
 .card1{
   width: 250px;
   height: 430px;
-  border: 2.5px solid #9e54001a;
   border-radius: 25px;
   color: #532c00;
   background-color: #fdfbf8;
   position: relative;
+  box-shadow: 0 0 5px 5px #0000001c;
 }
 
 .card1 .cardImg{
@@ -242,10 +243,65 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
 
 .card2{
   width: 450px;
-  border: solid;
   height: 430px;
-  border: 2.5px solid #9e54001a;
   border-radius: 25px;
   color: #532c00;
   background-color: #fdfbf8;
+  box-shadow: 0 0 5px 5px #0000001c;
 }
+
+/* Perfil de Sabor*/
+.card2 .card2-perfil-sabor {
+  width: 100%;
+  border-bottom:solid 1px #532c0050;
+}
+
+.card2 .card2-perfil-sabor h2{
+ margin: 10px 20px;
+}
+
+/* Perfil de Sabor - range slider*/
+.card2-perfil-sabor .contenedor-range-slider{
+  display: flex;
+  flex-direction:column ;
+  gap: 15px;
+  margin: 10px 20px;
+}
+
+.sabor-item{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.barra{
+width: 100%;
+background-color: #00000012;
+border-radius: 10px 10px 0px 0px;
+}
+
+.barra .barra-nivel-4 {
+  width: 70%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+  background-color:#ffab19;
+  background-image: url(../assets/maze-black.png);
+}
+
+.barra .barra-nivel-5 {
+  width: 80%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+   background-color:#ffb6379f;
+  background-image: url(../assets/maze-black.png);
+}
+
+.barra .barra-nivel-6 {
+  width: 90%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+   background-color:#ffb637e6;
+  background-image: url(../assets/maze-black.png);
+}
+
+

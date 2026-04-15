@@ -1,0 +1,1 @@
+- cambiar imagen de Hero , mostrar de fondo alineado a la derecha el pack de cafe
