@@ -114,10 +114,10 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
   line-height: 1.5; /*para separar lineas entre parrafos*/
 }
 
-.containerInf button{ /*!!!REVISAR EL BOTTOM !!! Mas adelante mejorar este botón con :HOVER*/
+.containerInf .btn-banner{ /*!!!REVISAR EL BOTTOM !!! Mas adelante mejorar este botón con :HOVER*/
   margin-top: 20px;
   padding: 15px 30px;
-  background: linear-gradient(45deg, #db941a, #b87a15);
+  background:  #db941a;
   color: #fff;
   border: 2px solid #db941a;
   border-radius: 8px;
@@ -164,7 +164,7 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
 
 .containerCard{
   width: 75%;
-  border: solid;
+  border: 1px solid #d9c4a8;
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -172,7 +172,6 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
   flex-direction: row;
   padding: 15px;
   gap: 20px;
- 
   background-color: #ffffff;
   box-shadow: 0 0 10px 5px #0000003d;
 }
@@ -181,7 +180,7 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
 
 .card1{
   width: 250px;
-  height: 430px;
+  height: 463px;
   border-radius: 25px;
   color: #532c00;
   background-color: #fdfbf8;
@@ -216,7 +215,7 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
 }
 
 .card1 .card1Text{
-  font-size: 0.85em;
+  font-size: 1em;
   margin: 0;
   padding: 10px ;
 }
@@ -243,7 +242,6 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
 
 .card2{
   width: 450px;
-  height: 430px;
   border-radius: 25px;
   color: #532c00;
   background-color: #fdfbf8;
@@ -274,10 +272,15 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
   gap: 10px;
 }
 
+.sabor-item span{
+  font-weight: bold;
+}
+
 .barra{
 width: 100%;
 background-color: #00000012;
 border-radius: 10px 10px 0px 0px;
+box-shadow:0px 0px 5px 3px #db941a65;
 }
 
 .barra .barra-nivel-4 {
@@ -304,4 +307,51 @@ border-radius: 10px 10px 0px 0px;
   background-image: url(../assets/maze-black.png);
 }
 
+.card2-detalles-container{
+  margin: 10px 30px;
+  border: 1px solid #532c005d;
+  border-radius: 10px ;
+}
 
+.card2-detalles-container h3{
+  font-size: 1.1rem;
+  margin: 0;
+  background-color: #db941ae7;
+  border-radius:10px 10px 0px 0px;
+  padding: 0 19px;
+}
+
+.card2-detalles-container ul{
+  padding: 10px 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card2-detalles-container ul li{
+  display: flex;
+  gap: 7px;
+}
+
+.card2-detalles-container ul li span{
+  font-weight: bold;
+}
+
+.card2-detalles-container ul li img{
+  width: 17px;
+margin-top: 3px ;
+}
+
+.btn-comprar{
+ margin: 0 40px;
+ width: 83%;
+ font-size: 1.3rem;
+ padding: 10px;
+ margin-bottom: 10px;
+ border-radius: 10px;
+border: 2px solid #db941a;
+background:  #db941a;
+  color: #fff;
+  
+}
