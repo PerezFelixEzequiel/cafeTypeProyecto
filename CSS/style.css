@@ -132,9 +132,9 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
 
 /*SEPARADORES ESTILO ONDAS*/
 
-.waveDivider{ /*REVISAR Y AALIZAR WAVE DIVIDER ¿Como se realizo esto? */
+.banner .waveDivider{ /*REVISAR Y AALIZAR WAVE DIVIDER ¿Como se realizo esto? */
   position: absolute;
-  bottom:-30px;
+  bottom:-27px;
   left: 0;
   width: 100%;
   line-height: 0;
@@ -144,23 +144,58 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
   display: block;
   width: 100%;
   height: 130px;
-  fill: #fdad35; /* mismo color de la sección de abajo */
+  fill:#febb55; /* mismo color de la sección de abajo */
 }
 
 /*Carrusel*/
-
 .sectionCarrusel{
-  background-color: #fdad35;
+  /* background-color: #febb55;
+  background-image: radial-gradient(#f0d9b6 1.5px, transparent 1.5px);
+  background-size: 18px 18px; */
+  background: radial-gradient(circle at center, #f0d9b6 0 10px, #febb55 24px);
   padding: 50px;
+  padding-bottom: 120px;
+  position: relative;
 }
 
 .sectionCarrusel .containerInf{
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.sectionCarrusel .waveDividerReverse{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  bottom: -100px;
+  z-index: 0;
+}
+
+.sectionCarrusel .waveDividerReverse svg{
+  display: block;
+  width: 100%;
+  height: 140px;
+  
 }
 
 
 /*ESTILOS CARD*/
+
+.titulo-section{
+  margin-bottom: 40px;
+  margin-top: 0;
+  color: #532c00;
+  font-size: 2em;
+  text-shadow:0px 0px 8px #00000041;
+  text-transform: lowercase;
+  padding: 10px;
+  font-weight: 100;
+}
 
 .containerCard{
   width: 75%;
@@ -280,7 +315,7 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
 width: 100%;
 background-color: #00000012;
 border-radius: 10px 10px 0px 0px;
-box-shadow:0px 0px 5px 3px #db941a65;
+/* box-shadow:0px 0px 5px 3px #db941a65; */
 }
 
 .barra .barra-nivel-4 {
@@ -355,3 +390,12 @@ background:  #db941a;
   color: #fff;
   
 }
+
+/*Sobre nosotros*/
+
+.section-sobre-nosotros{
+  background:#ececec ;
+  width: 100%;
+  height: 70%;
+}
+
