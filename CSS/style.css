@@ -392,18 +392,6 @@ background:  #db941a;
   
 }
 
-/*Sobre nosotros*/
-
-.section-sobre-nosotros{
-  background:#ececec ;
-  width: 100%;
-  height: 70%;
-}
-
-footer{
-  background: url(../assets/Icon\ Grid\ \(2\).svg);
-  padding: 100px;
-}
 
 /*Section Galeria*/
 .section-galery-sn{
@@ -422,6 +410,7 @@ footer{
   z-index: 2;
 }
 
+/*GALERIA 1*/
 h3.titulo-galery{
   color: #532c00;
   font-size: 2em;
@@ -441,7 +430,7 @@ h3.titulo-galery{
 
 .item-1{
   background: radial-gradient(#00000072 50%, transparent),
-    url(../assets/galeria/prueba4.png);
+  url(../assets/galeria/prueba4.png);
   background-size: cover;
   background-position: center;
   grid-column-start: 1;
@@ -469,7 +458,7 @@ h3.titulo-galery{
 
 .item-4{
   background: radial-gradient(#00000072 50%, transparent),
-    url(../assets/galeria/prueba3.png);
+  url(../assets/galeria/prueba3.png);
   background-size: cover;
   background-position: center;
   grid-column-start: -2;
@@ -485,6 +474,8 @@ h3.titulo-galery{
 .item-grid-border{
   border-radius: 15px;
 }
+
+/*Galeria 2*/
 
 .item-5{
   grid-row-start: 2;
@@ -515,7 +506,7 @@ h3.titulo-galery{
 .item-8{
   grid-row-start: 1;
   background: radial-gradient(#00000072 50%, transparent),
-    url(../assets/galeria/prueba7.png);
+  url(../assets/galeria/prueba7.png);
   background-size: cover;
   background-position: center;
   width: 610px;
@@ -526,6 +517,7 @@ h3.titulo-galery{
   box-shadow: 0px 0px 10px 2px #0000007b;
 }
 
+/*Textos en ITEMS DE GALERIA*/
 .item-text-container{
   margin: 20px;
   height: min-content;
@@ -542,7 +534,7 @@ h3.titulo-galery{
   left: 0;
   width: 100%;
   line-height: 0;
-  bottom: -100px;
+  bottom: -130px;
   z-index: 0;
 }
 
@@ -556,4 +548,160 @@ h3.titulo-galery{
   fill: #fff3e1;
   
 }
+
+/*seccion Cotactanos*/
+
+.section_contactanos{
+  background: url(../assets/Icon\ Grid\ \(2\).svg);
+  width: 100%;
+  min-height: 90vh;
+  padding: 200px 0 80px;
+}
+
+.section_contactanos .containerInf{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 90vw;
+}
+
+/*Contenedor CONTACTANOS*/
+.container_contactanos{
+  width: 60%;
+  min-height: 430px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border: #f6cb2e solid;
+  border-radius: 20px;
+  background-color: #000000;
+}
+
+.granos_icon{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -100px;
+  left: -200px;
+  width: 400px;
+  height: auto;
+  z-index: 10;
+}
+/*INFORMACION CONTACTO*/
+.container_contactanos .informacion_contacto{
+  width: 40%;
+  border-right: #f6cb2e solid;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 110px;
+}
+
+.contenedor_item_contacto{
+  margin: 0 20px 20px;
+  background-color: #f6cb2e;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.informacion_contacto .contenedor_item_contacto ul{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.informacion_contacto .contenedor_item_contacto ul li{
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  color: #000000
+}
+
+.informacion_contacto .contenedor_item_contacto ul li img{
+width: 30px;
+fill: #000000;
+}
+
+/*CONTENEDOR FORMULARIO*/
+
+.container_contactanos .formulario{
+  width:60%;
+  padding: 0 20px;
+  text-align: start;
+}
+
+.formulario h3{
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  color: #f6cb2e;
+}
+
+.formulario p{
+  margin-bottom: 20px;
+  color: #bdbdbdb4;
+}
+
+/*FORMULARIO*/
+
+.formulario form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formulario form input,textarea{
+  width: 100%;
+  border-radius: 10px;
+  padding:  20px 10px;
+  border: #f6cb2e solid;
+  background-color: #ffffff;
+}
+
+
+.formulario form input::placeholder,textarea::placeholder{
+  color: #000000;
+}
+
+.formulario form .botn_form{
+  width: 50%;
+  margin: 10px 0px;
+  color: #000000;
+  font-size: 20px;
+  background: #f6cb2e;
+}
+
+/*FOOTER*/
+
+footer{
+  background-color: #1b1205;
+  text-align: center;
+  margin-top: -40px;
+}
+
+footer .containerInf{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_content{
+  padding: 50px 
+}
+
+.footer_content p{
+  margin: 0;
+  color: #fff0da;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  opacity: 0.95;
+}
+
+.footer_content p span{
+  color: #f6cb2e;
+}
+
+
+
+
 
