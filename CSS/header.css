@@ -1,0 +1,51 @@
+/*HEADER*/
+header .containerInf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*LOGO PRINCIPAL*/
+
+.logoPrincipal{
+display: flex;  /*Cambiar a color #db941a*/
+flex-direction: row;
+gap: 10px;
+}
+
+.logoPrincipal svg{
+  width: 50px; /*Cambiar a color #db941a SVG*/
+  height: 50px;
+}
+
+.logoPrincipal h1{
+  margin: 0;
+}
+
+h1 span {
+  color: #db941a;
+}
+
+/*NAVEGACION */
+
+.navegacion ul{
+display: flex;
+flex-direction: row;
+gap: 30px;
+}
+
+ul{
+  list-style: none;
+}
+
+.navegacion ul a{
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.navegacion ul a:hover{
+  opacity: 1;
+  color: #db941a;
+}

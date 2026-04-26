@@ -1,0 +1,30 @@
+/*FOOTER*/
+
+footer{
+  background-color: #1b1205;
+  text-align: center;
+  margin-top: -40px;
+}
+
+footer .containerInf{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_content{
+  padding: 50px 
+}
+
+.footer_content p{
+  margin: 0;
+  color: #fff0da;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  opacity: 0.95;
+}
+
+.footer_content p span{
+  color: #f6cb2e;
+}

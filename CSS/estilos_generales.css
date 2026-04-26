@@ -1,0 +1,21 @@
+/* ESTILOS GENERALES  */
+html,body{
+overflow-x: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  /* font-family: "Bree Serif", serif; */
+  font-family: "bree", sans-serif;
+  background:#000000 ;
+  color: #fff;
+}
+
+.containerInf{
+width: min(1020px, calc(100% - 64px)); 
+margin: 0 auto;
+}
