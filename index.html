@@ -558,24 +558,33 @@
             />
             <div class="informacion_contacto">
               <div class="contenedor_item_contacto">
+                <h3>Contactanos</h3>
                 <ul>
-                  <li>
+                  <li class="contact_item">
                     <img
-                      src="./assets/contactanos/point-location-svgrepo-com.svg"
-                      alt="point location"
-                    />Avenida mayorca, 2323
+                      src="./assets/contactanos/pointer.svg"
+                      alt="pointer location"
+                    /><a
+                      href="https://www.google.com/maps/search/?api=1&query=Avenida+Mayorca+2323"
+                      target="_blank"
+                    >
+                      Avenida mayorca, 2323
+                    </a>
                   </li>
-                  <li>
-                    <img
-                      src="./assets/contactanos/envelope-svgrepo-com.svg"
-                      alt=""
-                    />cafetype@gmail.com
+                  <li class="contact_item">
+                    <img src="./assets/contactanos/email.svg" alt="email" /><a
+                      href="mailto:cafetype@gmail.com"
+                    >
+                      cafetype@gmail.com
+                    </a>
                   </li>
-                  <li>
+                  <li class="contact_item">
                     <img
-                      src="./assets/contactanos/telephone-svgrepo-com.svg"
-                      alt=""
-                    />+54 9 2983-988776
+                      src="./assets/contactanos/telephone.svg"
+                      alt="telephone"
+                    /><a href="https://wa.me/543794762251" target="_blank">
+                      +54 9 3794-762251
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -583,13 +592,61 @@
             <div class="formulario">
               <h3>Registrate</h3>
               <p>Descubre este mundo del cafe</p>
-              <form action="">
-                <input type="email" name="" id="" placeholder="your email" />
-                <textarea
-                  name=""
-                  id=""
-                  placeholder="Escribe aqui tu mensaje..."
-                ></textarea>
+              <form action="#">
+                <div>
+                  <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Juan perez"
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="nombre@email"
+                  />
+                </div>
+                <div>
+                  <label for="telefono">Teléfono</label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="+54 9 9837-232312"
+                  />
+                </div>
+
+                <div>
+                  <label for="motivo">Motivo de consulta</label>
+                  <select id="motivo" name="motivo">
+                    <option value="">Selecciona una opción</option>
+                    <option value="productos">Consulta sobre productos</option>
+                    <option value="pedidos">Pedidos</option>
+                    <option value="sucursales">Sucursales</option>
+                    <option value="otro">Otra consulta</option>
+                  </select>
+                </div>
+
+                <div>
+                  <textarea
+                    name=""
+                    id=""
+                    placeholder="Escribe aqui tu mensaje..."
+                  ></textarea>
+                </div>
+
+                <div class="cont_recibir_promociones">
+                  <p>Quiero recibir novedades y promociones</p>
+                  <label for="promo">
+                    <input type="checkbox" id="promo" name="promo" />
+                  </label>
+                </div>
                 <input type="submit" value="Enviar" class="botn_form" />
               </form>
             </div>
