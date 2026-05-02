@@ -1,4 +1,8 @@
 /*HEADER*/
+header{
+  background-color: #00000000;
+  padding: 15px 0;
+}
 header .containerInf {
   display: flex;
   flex-direction: row;

@@ -156,14 +156,15 @@
       <section class="banner">
         <!-- container para controlar informacion dentro de banner-->
         <div class="containerInf">
-          <h2 class="tituloBanner">CAFETYPE</h2>
-          <h3>Especialidades y variedades únicas</h3>
-          <p>
-            Explora nuestra selección de granos de café de alta calidad y
-            encuentra tu sabor perfecto. Desde cafés suaves y afrutados hasta
-            intensos y robustos, tenemos opciones para todos los paladares.
-          </p>
-          <button class="btn-banner">Explorar Cafés</button>
+          <div class="texto-banner">
+            <h2 class="tituloBanner">Variantes unicas</h2>
+            <h3>Especialidades y variedades únicas</h3>
+            <p>
+              Explora nuestra selección de granos de café de alta calidad y
+              encuentra tu sabor perfecto. Desde cafés suaves y afrutados hasta
+              intensos y robustos, tenemos opciones para todos los paladares.
+            </p>
+          </div>
         </div>
 
         <!--  Divisor Onda: Revisar este codigo y sus Estilos como 
@@ -186,297 +187,155 @@
       </section>
       <section class="sectionCarrusel" id="carrusel">
         <div class="containerInf">
-          <h2 class="titulo-section">Nuestra Seleccion . . .</h2>
-          <!--Swiper controlador para deslizar Cards en formato de Carrusel-->
-          <div class="swiper cafeSwiper">
-            <div class="swiper-wrapper">
-              <!--Cafe Italiano-->
-              <div class="swiper-slide">
-                <!--card ocupa todo el espacio de swiper-slide-->
-                <div class="containerCard">
-                  <div class="card1">
-                    <div class="card1Etiqueta">
-                      <p>Tueste clásico</p>
-                    </div>
-                    <div class="cardImg"></div>
-                    <h2>Café Italiano Intenso</h2>
-                    <p class="origen"><span>Origen:</span> Italia</p>
-                    <p class="origen"><span>Tostado:</span> Oscuro</p>
-                    <p class="card1Text">
-                      Un café de carácter fuerte y tradicional, con una taza
-                      envolvente, cremosa y profunda. Ideal para quienes
-                      prefieren sabores intensos y un final persistente.
-                    </p>
-                  </div>
-                  <div class="card2">
-                    <div class="card2-perfil-sabor">
-                      <h2>Perfil de Sabor</h2>
-                      <div class="contenedor-range-slider">
-                        <div class="sabor-item">
-                          <span>Amargor</span>
-                          <div class="barra">
-                            <div class="barra-nivel-6"></div>
-                          </div>
-                        </div>
-                        <div class="sabor-item">
-                          <span>Acidez</span>
-                          <div class="barra">
-                            <div class="barra-nivel-4"></div>
-                          </div>
-                        </div>
-                        <div class="sabor-item">
-                          <span>Cuerpo</span>
-                          <div class="barra">
-                            <div class="barra-nivel-6"></div>
-                          </div>
-                        </div>
-                        <div class="sabor-item">
-                          <span>Intensidad</span>
-                          <div class="barra">
-                            <div class="barra-nivel-6"></div>
-                          </div>
-                        </div>
-                        <div class="sabor-item">
-                          <span>Dulzor</span>
-                          <div class="barra">
-                            <div class="barra-nivel-4"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card2-detalles-container">
-                      <h3>Detalles</h3>
-                      <ul>
-                        <li>
-                          <img
-                            src="./assets/cards/leaf-svgrepo-com.svg"
-                            alt="tree leaf"
-                          />
-                          <span>Color: </span>marrón oscuro
-                        </li>
-                        <li>
-                          <img
-                            src="./assets/cards/coffee-grinder-svgrepo-com.svg"
-                            alt="coffe grinder"
-                          />
-                          <span>Molienda ideal: </span>fina
-                        </li>
-                        <li>
-                          <img
-                            src="./assets/cards/drop-svgrepo-com.svg"
-                            alt="drop"
-                          />
-                          <span>Notas destacadas: </span>cacao amargo, avellana,
-                          caramelo tostado
-                        </li>
-                        <li>
-                          <img
-                            src="./assets/cards/french-press-svgrepo-com.svg"
-                            alt="french press"
-                          />
-                          <span> Metodo ideal: </span>espresso
-                        </li>
-                      </ul>
-                    </div>
-                    <button class="btn-comprar">Comprar</button>
-                  </div>
-                </div>
-              </div>
-              <!--Cafe Colombia-->
-              <div class="swiper-slide">
-                <div class="containerCard">
-                  <div class="card1">
-                    <div class="card1Etiqueta">
-                      <p>Acidez brillante</p>
-                    </div>
-                    <div class="cardImg"></div>
-                    <h2>Café Colombia Altura</h2>
-                    <p class="origen"><span>Origen:</span> Colombia</p>
-                    <p class="origen"><span>Tostado:</span> Medio claro</p>
-                    <p class="card1Text">
-                      Un café vibrante y aromático, con una taza limpia y
-                      expresiva. Ideal para quienes buscan notas frutales, una
-                      acidez elegante y un perfil fresco.
-                    </p>
-                  </div>
-                  <div class="card2">
-                    <div class="card2-perfil-sabor">
-                      <h2>Perfil de Sabor</h2>
-                      <div class="contenedor-range-slider">
-                        <div class="sabor-item">
-                          <span>Amargor</span>
-                          <div class="barra">
-                            <div class="barra-nivel-4"></div>
-                          </div>
-                        </div>
-                        <div class="sabor-item">
-                          <span>Acidez</span>
-                          <div class="barra">
-                            <div class="barra-nivel-6"></div>
-                          </div>
-                        </div>
-                        <div class="sabor-item">
-                          <span>Cuerpo</span>
-                          <div class="barra">
-                            <div class="barra-nivel-4"></div>
-                          </div>
-                        </div>
-                        <div class="sabor-item">
-                          <span>Intensidad</span>
-                          <div class="barra">
-                            <div class="barra-nivel-5"></div>
-                          </div>
-                        </div>
-                        <div class="sabor-item">
-                          <span>Dulzor</span>
-                          <div class="barra">
-                            <div class="barra-nivel-5"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="card2-detalles-container">
-                      <h3>Detalles</h3>
-                      <ul>
-                        <li>
-                          <img
-                            src="./assets/cards/leaf-svgrepo-com.svg"
-                            alt="tree leaf"
-                          />
-                          <span>Color: </span>ámbar claro
-                        </li>
-                        <li>
-                          <img
-                            src="./assets/cards/coffee-grinder-svgrepo-com.svg"
-                            alt="coffe grinder"
-                          />
-                          <span>Molienda ideal: </span>media
-                        </li>
-                        <li>
-                          <img
-                            src="./assets/cards/drop-svgrepo-com.svg"
-                            alt="drop"
-                          />
-                          <span>Notas destacadas: </span>cítricos, miel, frutos
-                          amarillos
-                        </li>
-                        <li>
-                          <img
-                            src="./assets/cards/french-press-svgrepo-com.svg"
-                            alt="french press"
-                          />
-                          <span> Metodo ideal: </span>V60
-                        </li>
-                      </ul>
-                    </div>
-                    <button class="btn-comprar">Comprar</button>
-                  </div>
-                </div>
-              </div>
-              <!--Cafe Brasilero-->
-              <div class="swiper-slide">
-                <div class="containerCard">
-                  <div class="card1">
-                    <div class="card1Etiqueta"><p>Alta intensidad</p></div>
-                    <div class="cardImg"></div>
-                    <h2>Café Brasil Selvático</h2>
-                    <p class="origen"><span>Origen:</span> Brasil</p>
-                    <p class="origen"><span>Tostado:</span> Medio oscuro</p>
-                    <p class="card1Text">
-                      Un café intenso y envolvente, con notas calidas y un
-                      perfil ideal para quienes disfrutan una taza con caracter.
-                    </p>
-                  </div>
-                  <div class="card2">
-                    <div class="card2-perfil-sabor">
-                      <h2>Perfil de Sabor</h2>
-                      <!-- range slider -->
-                      <div class="contenedor-range-slider">
-                        <div class="sabor-item">
-                          <span>Amargor</span>
-                          <div class="barra">
-                            <div class="barra-nivel-4"></div>
-                          </div>
-                        </div>
-                        <div class="sabor-item">
-                          <span>Acidez</span>
-                          <div class="barra">
-                            <div class="barra-nivel-5"></div>
-                          </div>
-                        </div>
-                        <div class="sabor-item">
-                          <span>Cuerpo</span>
-                          <div class="barra">
-                            <div class="barra-nivel-4"></div>
-                          </div>
-                        </div>
-                        <div class="sabor-item">
-                          <span>Intensidad</span>
-                          <div class="barra">
-                            <div class="barra-nivel-6"></div>
-                          </div>
-                        </div>
-                        <div class="sabor-item">
-                          <span>Dulzor</span>
-                          <div class="barra">
-                            <div class="barra-nivel-5"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- range slider -->
-                    </div>
-                    <div class="card2-detalles-container">
-                      <h3>Detalles</h3>
-                      <ul>
-                        <li>
-                          <img
-                            src="./assets/cards/leaf-svgrepo-com.svg"
-                            alt="tree leaf"
-                          />
-                          <span>Color: </span>oscuro
-                        </li>
-                        <li>
-                          <img
-                            src="./assets/cards/coffee-grinder-svgrepo-com.svg"
-                            alt="coffe grinder"
-                          />
-                          <span>Molienda ideal: </span>media
-                        </li>
-                        <li>
-                          <img
-                            src="./assets/cards/drop-svgrepo-com.svg"
-                            alt="drop"
-                          />
-                          <span>Notas destacadas: </span>chocolate,nuez,caramelo
-                        </li>
-                        <li>
-                          <img
-                            src="./assets/cards/french-press-svgrepo-com.svg"
-                            alt="french press"
-                          />
-                          <span> Metodo ideal: </span>prensa francesa
-                        </li>
-                      </ul>
-                    </div>
-                    <button class="btn-comprar">Comprar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+          <div class="section-head-carrusel">
+            <a href="#tienda" class="link-tienda">Ver toda la tienda</a>
           </div>
         </div>
+
+        <div class="swiper cafeCardsSwiper">
+          <div class="container-item swiper-wrapper">
+            <div class="cards-cafe brasil-selvatico swiper-slide">
+              <h2 class="titulos-card">Brasil Selvatico</h2>
+              <div class="container-img-card">
+                <img
+                  src="./assets/cards/Mockoup.png"
+                  width="100"
+                  alt="cafe brasil selvatico"
+                />
+                <button id="open-modal-btn" class="btn-action-modal">
+                  Ver mas
+                </button>
+              </div>
+              <div class="container-descripcion-card">
+                <p class="descripcion-card">
+                  Café intenso y envolvente, con notas cálidas y perfil con
+                  carácter.
+                </p>
+                <button class="btn-card">Comprar</button>
+              </div>
+            </div>
+
+            <div class="cards-cafe italiano-intenso swiper-slide">
+              <h2 class="titulos-card">Italiano Intenso</h2>
+              <div class="container-img-card">
+                <img
+                  src="./assets/cards/Mockoup.png"
+                  width="100"
+                  alt="cafe Italiano Intenso"
+                />
+                <button id="open-modal-btn" class="btn-action-modal">
+                  Ver mas
+                </button>
+              </div>
+              <div class="container-descripcion-card">
+                <p class="descripcion-card">
+                  Sabor fuerte y tradicional, con taza profunda, cremosa y
+                  robusta.
+                </p>
+                <button class="btn-card">Comprar</button>
+              </div>
+            </div>
+
+            <div class="cards-cafe colombia-altura swiper-slide">
+              <h2 class="titulos-card">Colombia Altura</h2>
+              <div class="container-img-card">
+                <img
+                  src="./assets/cards/Mockoup.png"
+                  width="100"
+                  alt="cafe colombia altura"
+                />
+                <button id="open-modal-btn" class="btn-action-modal">
+                  Ver mas
+                </button>
+              </div>
+              <div class="container-descripcion-card">
+                <p class="descripcion-card">
+                  Equilibrado y luminoso, con acidez agradable y notas frutales
+                  frescas.
+                </p>
+                <button class="btn-card">Comprar</button>
+              </div>
+            </div>
+
+            <div class="cards-cafe frances-elegante swiper-slide">
+              <h2 class="titulos-card">Frances Elegante</h2>
+              <div class="container-img-card">
+                <img
+                  src="./assets/cards/Mockoup.png"
+                  width="100"
+                  alt="cafe Frances Elegante"
+                />
+                <button id="open-modal-btn" class="btn-action-modal">
+                  Ver mas
+                </button>
+              </div>
+              <div class="container-descripcion-card">
+                <p class="descripcion-card">
+                  Suave y aromático, con un perfil delicado, refinado y
+                  armonioso, Silencioso.
+                </p>
+                <button class="btn-card">Comprar</button>
+              </div>
+            </div>
+
+            <div class="cards-cafe peru-andino swiper-slide">
+              <h2 class="titulos-card">Peru Andino</h2>
+              <div class="container-img-card">
+                <img
+                  src="./assets/cards/Mockoup.png"
+                  width="100"
+                  alt="cafe Peru Andino"
+                />
+                <button id="open-modal-btn" class="btn-action-modal">
+                  Ver mas
+                </button>
+              </div>
+              <div class="container-descripcion-card">
+                <p class="descripcion-card">
+                  Suave y aromático, con notas dulces, equilibrio y frescura
+                  limpia.
+                </p>
+                <button class="btn-card">Comprar</button>
+              </div>
+            </div>
+
+            <div class="cards-cafe españa-noble swiper-slide">
+              <h2 class="titulos-card">España Noble</h2>
+              <div class="container-img-card">
+                <img
+                  src="./assets/cards/Mockoup.png"
+                  width="100"
+                  alt="Cafe España Noble"
+                />
+                <button id="open-modal-btn" class="btn-action-modal">
+                  Ver mas
+                </button>
+              </div>
+              <div class="container-descripcion-card">
+                <p class="descripcion-card">
+                  Intenso y tostado, con notas profundas y final elegante y
+                  persistente.
+                </p>
+                <button class="btn-card">Comprar</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-prev cafe-cards-prev"></div>
+          <div class="swiper-button-next cafe-cards-next"></div>
+          <div class="swiper-pagination cafe-cards-pagination"></div>
+        </div>
+
         <div class="waveDivider waveDividerReverse">
           <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
             <path
               d="M0,120
-         C180,170 360,175 520,150
-         C700,120 900,60 1120,55
-         C1260,52 1360,65 1440,85
-         L1440,0
-         L0,0
-         Z"
+           C180,170 360,175 520,150
+           C700,120 900,60 1120,55
+           C1260,52 1360,65 1440,85
+           L1440,0
+           L0,0
+           Z"
             ></path>
           </svg>
         </div>
@@ -668,19 +527,112 @@
         </p>
       </div>
     </footer>
+    <!--modal global -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal-btn" class="close">&times;</span>
+        <div class="card1">
+          <div class="card1Etiqueta"><p>Alta intensidad</p></div>
+          <div class="cardImg"></div>
+          <h2>Café Brasil Selvático</h2>
+          <p class="origen"><span>Origen:</span> Brasil</p>
+          <p class="origen"><span>Tostado:</span> Medio oscuro</p>
+          <p class="card1Text">
+            Un café intenso y envolvente, con notas calidas y un perfil ideal
+            para quienes disfrutan una taza con caracter.
+          </p>
+        </div>
+        <div class="card2">
+          <div class="card2-perfil-sabor">
+            <h2>Perfil de Sabor</h2>
+            <!-- range slider -->
+            <div class="contenedor-range-slider">
+              <div class="sabor-item">
+                <span>Amargor</span>
+                <div class="barra">
+                  <div class="barra-nivel-4"></div>
+                </div>
+              </div>
+              <div class="sabor-item">
+                <span>Acidez</span>
+                <div class="barra">
+                  <div class="barra-nivel-5"></div>
+                </div>
+              </div>
+              <div class="sabor-item">
+                <span>Cuerpo</span>
+                <div class="barra">
+                  <div class="barra-nivel-4"></div>
+                </div>
+              </div>
+              <div class="sabor-item">
+                <span>Intensidad</span>
+                <div class="barra">
+                  <div class="barra-nivel-6"></div>
+                </div>
+              </div>
+              <div class="sabor-item">
+                <span>Dulzor</span>
+                <div class="barra">
+                  <div class="barra-nivel-5"></div>
+                </div>
+              </div>
+            </div>
+            <!-- range slider -->
+          </div>
+          <div class="card2-detalles-container">
+            <h3>Detalles</h3>
+            <ul>
+              <li>
+                <img
+                  src="./assets/cards/leaf-svgrepo-com.svg"
+                  alt="tree leaf"
+                />
+                <span>Color: </span>oscuro
+              </li>
+              <li>
+                <img
+                  src="./assets/cards/coffee-grinder-svgrepo-com.svg"
+                  alt="coffe grinder"
+                />
+                <span>Molienda ideal: </span>media
+              </li>
+              <li>
+                <img src="./assets/cards/drop-svgrepo-com.svg" alt="drop" />
+                <span>Notas destacadas: </span>chocolate,nuez,caramelo
+              </li>
+              <li>
+                <img
+                  src="./assets/cards/french-press-svgrepo-com.svg"
+                  alt="french press"
+                />
+                <span> Metodo ideal: </span>prensa francesa
+              </li>
+            </ul>
+          </div>
+          <button class="btn-comprar">Comprar</button>
+        </div>
+      </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
     <script>
-      const swiper = new Swiper(".cafeSwiper", {
-        loop: true,
-        centeredSlides: true,
-        slidesPerView: 1.2,
-        spaceBetween: 20,
+      const swiperCards = new Swiper(".cafeCardsSwiper", {
+        loop: false,
+        slidesPerView: "auto",
+        spaceBetween: 24,
+        centeredSlides: false,
+        slidesOffsetBefore: 20,
+        slidesOffsetAfter: 20,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: ".cafe-cards-next",
+          prevEl: ".cafe-cards-prev",
+        },
+        pagination: {
+          el: ".cafe-cards-pagination",
+          clickable: true,
         },
       });
     </script>
+    <script src="JS/card-modal.js"></script>
   </body>
 </html>
