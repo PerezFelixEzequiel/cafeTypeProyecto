@@ -1,14 +1,16 @@
 //Seleccionamos el modal y los 2 botones de abrir y cerrar
 const modal = document.getElementById('modal');
-const openModalBtn = document.getElementById('open-modal-btn');
+const openModalBtn = document.querySelectorAll('.open-modal-btn');
 const closeModalBtn = document.getElementById('close-modal-btn');
 
 //ACA LE DECIMOS LO QUE VA A HACER CADA BOTON
-
-openModalBtn.addEventListener('click',function(){
+// Recorremos todos los botones "Ver mas" y les agregamos un evento de click para abrir el modal
+openModalBtn.forEach(function(btn) {
+  btn.addEventListener('click',function(){
   modal.style.display = 'flex';
 });
-
+});
+// BOTON PARA CERRAR EL MODAL
 closeModalBtn.addEventListener('click',function(){
   modal.style.display = 'none';
 });

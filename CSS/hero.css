@@ -14,6 +14,7 @@ main .banner{
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  overflow: hidden;
 
 }
 
@@ -25,9 +26,7 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
   padding: 50px;
 }
 
-.texto-banner{
 
-}
 
 .containerInf .tituloBanner{
   font-weight: 100px;
@@ -81,3 +80,7 @@ main .banner .containerInf{ /*Container info ya tiene tamaño definido en genera
   fill:#febb55; /* mismo color de la sección de abajo */
   
 }
+
+
+
+

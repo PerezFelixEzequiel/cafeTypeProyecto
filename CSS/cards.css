@@ -1,8 +1,7 @@
 /*Carrusel*/
 
 .sectionCarrusel{
-  background-color: #febb55;
-  padding: 50px 0;
+  background-color: #feba55;
   position: relative;
   z-index: 2;
 }
