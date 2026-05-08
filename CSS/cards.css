@@ -1,178 +1,48 @@
 /*Carrusel*/
 
 .sectionCarrusel{
-  background-color: #feba55;
-  position: relative;
-  z-index: 2;
+  padding: 200px 100px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
 }
 
 /* contenedor general del carrusel */
-.sectionCarrusel .containerInf{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  z-index: 2;
-}
-
-.section-head-carrusel{
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 60px;
-  margin-bottom: 30px;
-}
-
-
-.link-tienda{
-  color: #ffe3cc;
-  font-size: 2rem;
-  font-weight: 500;
-  transition: 0.3s ease;
-  line-height: 1;
-  margin: 0;
-}
-
-.link-tienda:hover{
-  color: #fff;
-  text-shadow: 0px 0px 5px #db941a;
-}
-
-/* swiper a pantalla completa */
-.cafeCardsSwiper{
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  overflow: hidden;
-  position: relative;
-  padding: 10px 40px 50px;
-  box-sizing: border-box;
-}
-
-/* wrapper */
-.container-item{
-  display: flex;
-  align-items: stretch;
-}
-
-
-/* cada slide */
-.cafeCardsSwiper .swiper-slide{
-  width: 240px !important;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  flex-shrink: 0;
-}
 
 
 /* card */
-.cards-cafe{
+.cards-cafe {
+  width: 240px;
+  min-height: 190px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  min-height: 390px;
-  background-color: #fdfbf8;
-  padding: 14px 14px 16px;
-  border-radius: 15px;
-  box-shadow: 0 0 5px 5px #00000013;
+  text-align: center;
+  gap: 10px;
+  padding: 15px;
+  position: relative;
+  overflow: visible;
+  background-color: #fdfbf830;
+  border-radius: 25px;
 }
 
-.cards-cafe .titulos-card{
-  color: #532c00;
+.container-img-card {
+  z-index: 3;
 }
 
-/* imagen interna */
-.container-img-card{
-  width: 100%;
-  min-height: 200px;
+.container-img-card img{
+  width: 130px;
+  position: absolute;
+  bottom: 170px;
+  left: 50px;
+  filter: drop-shadow(0px 0px 5px #0000009b);
+  z-index: 4;
 }
-
-.brasil-selvatico .container-img-card{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 15px;
-  background-position: center;
-  background-size: cover;
-  background-image: url(../assets/cards/fondo-brasil1.png);
-  background-repeat: no-repeat;
-}
-
-.italiano-intenso .container-img-card{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 15px;
-  background-position: center;
-  background-size: cover;
-  background-image: url(../assets/cards/fondo-italia.jpg);
-}
-
-.colombia-altura .container-img-card{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 15px;
-  background-image: url(../assets/cards/fondo-colombia.png);
-  background-position: center;
-  background-size: cover;
-}
-.frances-elegante .container-img-card{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 15px;
-  background-image: url(../assets/cards/fondo-francia.png);
-  background-position: center;
-  background-size: cover;
-}
-
-.peru-andino .container-img-card{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 15px;
-  background-image: url(../assets/cards/fondo-peru.png);
-  background-position: center;
-  background-size: cover;
-}
-
-.españa-noble .container-img-card{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-radius: 15px;
-  background-image: url(../assets/cards/fondo-espana.png);
-  background-position: center;
-  background-size: 70% ;
-
-}
-
 
 .btn-action-modal{
-  width: 45%;
   padding: 5px;
   background-color: #ebddc4;
   border: none;
@@ -180,6 +50,9 @@
   color: #000000;
   border-radius: 10px;
   cursor: pointer;
+  position: relative;
+  width:110px;
+  z-index: 5;
 }
 
 .btn-action-modal:hover{
@@ -191,19 +64,13 @@
   text-align: center;
 }
 
-.cards-cafe .titulos-card{
-  font-size: 1.2em;
-  margin-bottom:  10px;
-  margin-top: 0;
-  font-weight: 900;
-}
 
 .container-descripcion-card p{
   font-size: 0.9rem;
   padding: 10px 4px;
-  color: #532c00;
+  color: #ffffff;
   line-height: 1.45;
-  font-weight: 300;
+  font-weight: 100;
 }
 .btn-card{
   width: 90%;
@@ -220,53 +87,6 @@
   background-color: #ffab19;
   color: #fff;
 }
-
-
-.sectionCarrusel .waveDividerReverse{
-  position: absolute;
-  left: 0;
-  width: 100%;
-  line-height: 0;
-  bottom: -100px;
-  z-index: 3;
-}
-
-.sectionCarrusel .waveDividerReverse svg{
-  display: block;
-  width: 100%;
-  height: 140px;
-}
-
-.cafe-cards-prev,
-.cafe-cards-next{
-  color: #532c00;
-}
-
-.cafe-cards-prev::after,
-.cafe-cards-next::after{
-  font-size: 26px;
-  font-weight: bold;
-}
-
-.cafe-cards-pagination .swiper-pagination-bullet{
-  background-color: #532c00;
-  opacity: 0.35;
-}
-
-.cafe-cards-pagination .swiper-pagination-bullet-active{
-  opacity: 1;
-}
-
-.titulo-section{
-  margin-bottom: 40px;
-  margin-top: 0;
-  color: #532c00;
-  font-size: 2em;
-  text-transform: lowercase;
-  padding: 10px;
-  font-weight: 100;
-}
-
 
 
 /*MODAL CARD*/
@@ -500,26 +320,5 @@ background:  #db941a;
   
 }
 
-.cafe-cards-prev,
-.cafe-cards-next{
-  color: #2b1700;
-  padding: 10px;
-  border-radius: 20px;
-  background-color: #ffb546;
-  width: 80px;
-  box-shadow: 0px 0px 5px 3px #db941a65;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 20;
-}
 
-.cafe-cards-next{
-  right: 22px !important;
-}
 
-.cafe-cards-prev{
-  left: 22px !important;
-}

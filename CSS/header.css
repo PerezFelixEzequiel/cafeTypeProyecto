@@ -1,9 +1,9 @@
 /*HEADER*/
 header{
-  background-color: #00000000;
   padding: 15px 0;
+  border-bottom: 2px solid #db941a13;
 }
-header .containerInf {
+header .container-inf {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

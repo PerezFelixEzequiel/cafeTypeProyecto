@@ -26,7 +26,7 @@
   </head>
   <body>
     <header>
-      <div class="containerInf">
+      <div class="container-inf">
         <div class="logoPrincipal">
           <svg
             fill="#db941a"
@@ -153,182 +153,148 @@
       </div>
     </header>
     <main>
-      <section class="banner">
-        <!-- container para controlar informacion dentro de banner-->
-        <div class="containerInf">
-          <div class="texto-banner">
-            <h2 class="tituloBanner">Variantes unicas</h2>
-            <h3>Especialidades y variedades únicas</h3>
-            <p>
-              Explora nuestra selección de granos de café de alta calidad y
-              encuentra tu sabor perfecto. Desde cafés suaves y afrutados hasta
-              intensos y robustos, tenemos opciones para todos los paladares.
-            </p>
-          </div>
-        </div>
-
-        <!--  Divisor Onda: Revisar este codigo y sus Estilos como 
-          funcionan estas etiquetas Path sus Atributos y el SVG, en 
-          CSS revisar sus estilos  -->
-        <div class="waveDivider">
-          <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
-            <path
-              d="M0,100
-         C180,155 380,150 600,120
-         C850,85 1080,35 1240,40
-         C1330,45 1390,75 1440,100
-         L1440,180
-         L0,180
-         Z"
-            ></path>
-            path es para definir la forma de la onda , mediante cordenadas
-          </svg>
-        </div>
-      </section>
-      <section class="sectionCarrusel" id="carrusel">
-        <div class="containerInf">
-          <div class="section-head-carrusel">
-            <a href="#tienda" class="link-tienda">Ver toda la tienda</a>
-          </div>
-        </div>
-
-        <div class="swiper cafeCardsSwiper">
-          <div class="container-item swiper-wrapper">
-            <div class="cards-cafe brasil-selvatico swiper-slide">
-              <h2 class="titulos-card">Brasil Selvatico</h2>
-              <div class="container-img-card">
+      <div class="container-inf">
+        <section class="hero">
+          <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
                 <img
-                  src="./assets/cards/Mockoup.png"
-                  width="100"
-                  alt="cafe brasil selvatico"
+                  src="./assets/hero_banner/banner-principal.png"
+                  alt="banner principal"
+                  class="img-hero"
                 />
-                <button class="btn-action-modal open-modal-btn">Ver mas</button>
               </div>
-              <div class="container-descripcion-card">
-                <p class="descripcion-card">
-                  Café intenso y envolvente, con notas cálidas y perfil con
-                  carácter.
-                </p>
-                <button class="btn-card">Comprar</button>
+
+              <div class="swiper-slide">
+                <img
+                  src="./assets/hero_banner/cafe-colombia.png"
+                  alt="café colombia"
+                  class="img-hero"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./assets/hero_banner/cafe-españa.png"
+                  alt="café españa"
+                  class="img-hero"
+                />
+              </div>
+
+              <div class="swiper-slide">
+                <img
+                  src="./assets/hero_banner/cafe-francia.png"
+                  alt="café francia"
+                  class="img-hero"
+                />
               </div>
             </div>
 
-            <div class="cards-cafe italiano-intenso swiper-slide">
-              <h2 class="titulos-card">Italiano Intenso</h2>
-              <div class="container-img-card">
-                <img
-                  src="./assets/cards/Mockoup.png"
-                  width="100"
-                  alt="cafe Italiano Intenso"
-                />
-                <button class="btn-action-modal open-modal-btn">Ver mas</button>
-              </div>
-              <div class="container-descripcion-card">
-                <p class="descripcion-card">
-                  Sabor fuerte y tradicional, con taza profunda, cremosa y
-                  robusta.
-                </p>
-                <button class="btn-card">Comprar</button>
-              </div>
-            </div>
-
-            <div class="cards-cafe colombia-altura swiper-slide">
-              <h2 class="titulos-card">Colombia Altura</h2>
-              <div class="container-img-card">
-                <img
-                  src="./assets/cards/Mockoup.png"
-                  width="100"
-                  alt="cafe colombia altura"
-                />
-                <button class="btn-action-modal open-modal-btn">Ver mas</button>
-              </div>
-              <div class="container-descripcion-card">
-                <p class="descripcion-card">
-                  Equilibrado y luminoso, con acidez agradable y notas frutales
-                  frescas.
-                </p>
-                <button class="btn-card">Comprar</button>
-              </div>
-            </div>
-
-            <div class="cards-cafe frances-elegante swiper-slide">
-              <h2 class="titulos-card">Frances Elegante</h2>
-              <div class="container-img-card">
-                <img
-                  src="./assets/cards/Mockoup.png"
-                  width="100"
-                  alt="cafe Frances Elegante"
-                />
-                <button class="btn-action-modal open-modal-btn">Ver mas</button>
-              </div>
-              <div class="container-descripcion-card">
-                <p class="descripcion-card">
-                  Suave y aromático, con un perfil delicado, refinado y
-                  armonioso, Silencioso.
-                </p>
-                <button class="btn-card">Comprar</button>
-              </div>
-            </div>
-
-            <div class="cards-cafe peru-andino swiper-slide">
-              <h2 class="titulos-card">Peru Andino</h2>
-              <div class="container-img-card">
-                <img
-                  src="./assets/cards/Mockoup.png"
-                  width="100"
-                  alt="cafe Peru Andino"
-                />
-                <button class="btn-action-modal open-modal-btn">Ver mas</button>
-              </div>
-              <div class="container-descripcion-card">
-                <p class="descripcion-card">
-                  Suave y aromático, con notas dulces, equilibrio y frescura
-                  limpia.
-                </p>
-                <button class="btn-card">Comprar</button>
-              </div>
-            </div>
-
-            <div class="cards-cafe españa-noble swiper-slide">
-              <h2 class="titulos-card">España Noble</h2>
-              <div class="container-img-card">
-                <img
-                  src="./assets/cards/Mockoup.png"
-                  width="100"
-                  alt="Cafe España Noble"
-                />
-                <button class="btn-action-modal open-modal-btn">Ver mas</button>
-              </div>
-              <div class="container-descripcion-card">
-                <p class="descripcion-card">
-                  Intenso y tostado, con notas profundas y final elegante y
-                  persistente.
-                </p>
-                <button class="btn-card">Comprar</button>
-              </div>
+            <div class="hero-controls">
+              <button class="hero-prev">‹</button>
+              <div class="swiper-pagination hero-pagination"></div>
+              <button class="hero-next">›</button>
             </div>
           </div>
+        </section>
+      </div>
+        <section class="sectionCarrusel" id="carrusel">
+          <!--Cafe Brasil-->
+              <div class="cards-cafe brasil-selvatico">
+                <div class="container-img-card">
+                  <img
+                    src="./assets/cards/cafe-brasil.png"
+                    alt="cafe brasil selvatico"
+                    class="img-card-cafe"
+                  />
 
-          <div class="swiper-button-prev cafe-cards-prev"></div>
-          <div class="swiper-button-next cafe-cards-next"></div>
-          <div class="swiper-pagination cafe-cards-pagination"></div>
-        </div>
+                  <button class="btn-action-modal open-modal-btn">
+                    Ver mas
+                  </button>
+                </div>
 
-        <div class="waveDivider waveDividerReverse">
-          <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
-            <path
-              d="M0,120
-           C180,170 360,175 520,150
-           C700,120 900,60 1120,55
-           C1260,52 1360,65 1440,85
-           L1440,0
-           L0,0
-           Z"
-            ></path>
-          </svg>
-        </div>
-      </section>
-      <section class="section-galery-sn" id="galeria">
+                <div class="container-descripcion-card">
+                  <p class="descripcion-card">
+                    Café intenso y envolvente con notas cálidas y perfil con
+                    carácter. Rico con personalidad, tostado que envidian.
+                  </p>
+                </div>
+                <button class="btn-card">Comprar</button>
+              </div>
+            </div>
+            <!--Cafe Colombia-->
+            <div class="cards-cafe brasil-selvatico">
+                <div class="container-img-card">
+                  <img
+                    src="./assets/cards/cafe-colombia.png"
+                    alt="cafe brasil selvatico"
+                    class="img-card-cafe"
+                  />
+
+                  <button class="btn-action-modal open-modal-btn">
+                    Ver mas
+                  </button>
+                </div>
+
+                <div class="container-descripcion-card">
+                  <p class="descripcion-card">
+                    Café intenso y envolvente con notas cálidas y perfil con
+                    carácter. Rico con personalidad, tostado que envidian.
+                  </p>
+                </div>
+                <button class="btn-card">Comprar</button>
+              </div>
+            </div>
+            <!--Cafe España-->
+            <div class="cards-cafe brasil-selvatico">
+                <div class="container-img-card">
+                  <img
+                    src="./assets/cards/cafe-espana.png"
+                    alt="cafe brasil selvatico"
+                    class="img-card-cafe"
+                  />
+
+                  <button class="btn-action-modal open-modal-btn">
+                    Ver mas
+                  </button>
+                </div>
+
+                <div class="container-descripcion-card">
+                  <p class="descripcion-card">
+                    Café intenso y envolvente con notas cálidas y perfil con
+                    carácter. Rico con personalidad, tostado que envidian.
+                  </p>
+                </div>
+                <button class="btn-card">Comprar</button>
+              </div>
+            </div>
+            <!--Cafe Francia-->
+            <div class="cards-cafe brasil-selvatico">
+                <div class="container-img-card">
+                  <img
+                    src="./assets/cards/cafe-francia.png"
+                    alt="cafe brasil selvatico"
+                    class="img-card-cafe"
+                  />
+
+                  <button class="btn-action-modal open-modal-btn">
+                    Ver mas
+                  </button>
+                </div>
+
+                <div class="container-descripcion-card">
+                  <p class="descripcion-card">
+                    Café intenso y envolvente con notas cálidas y perfil con
+                    carácter. Rico con personalidad, tostado que envidian.
+                  </p>
+                </div>
+                <button class="btn-card">Comprar</button>
+              </div>
+            </div>
+        </section>
+    
+
+      <!-- <section class="section-galery-sn" id="galeria">
         <div class="containerInf">
           <h3 class="titulo-galery">Elaboracion Propia con historia</h3>
           <div class="grid-container">
@@ -506,15 +472,15 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer>
+    <!-- <footer>
       <div class="containerInf footer_content">
         <p>
           & copy; 2026 <span>CAFETYPE</span>. Todos los derechos reservados.
         </p>
       </div>
-    </footer>
+    </footer> -->
     <!--modal global -->
     <div id="modal" class="modal">
       <div class="modal-content">
@@ -603,24 +569,25 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <script>
-      const swiperCards = new Swiper(".cafeCardsSwiper", {
-        loop: false,
-        slidesPerView: "auto",
-        spaceBetween: 24,
-        centeredSlides: false,
-        slidesOffsetBefore: 20,
-        slidesOffsetAfter: 20,
-        navigation: {
-          nextEl: ".cafe-cards-next",
-          prevEl: ".cafe-cards-prev",
-        },
+      const heroSwiper = new Swiper(".heroSwiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+
         pagination: {
-          el: ".cafe-cards-pagination",
+          el: ".hero-pagination",
           clickable: true,
+        },
+
+        navigation: {
+          nextEl: ".hero-next",
+          prevEl: ".hero-prev",
         },
       });
     </script>
+
     <script src="./JS/card-modal.js"></script>
   </body>
 </html>
