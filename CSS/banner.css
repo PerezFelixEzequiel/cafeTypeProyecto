@@ -1,28 +1,28 @@
 /* HERO */
 
-main .hero {
+main .banner {
   width: 100%;
   border-radius: 20px;
   margin-top: 20px;
   overflow: hidden;
 }
 
-.heroSwiper {
+.bannerSwiper {
   width: 100%;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
 }
 
-.heroSwiper .swiper-wrapper {
+.bannerSwiper .swiper-wrapper {
   width: 100%;
 }
 
-.heroSwiper .swiper-slide {
+.bannerSwiper .swiper-slide {
   width: 100%;
 }
 
-.hero .img-hero {
+.banner .img-banner {
   width: 100%;
   height: auto;
   display: block;
@@ -32,7 +32,7 @@ main .hero {
 
 /* CONTROLES DENTRO DEL CARRUSEL */
 
-.hero-controls {
+.banner-controls {
   position: absolute;
   left: 50%;
   bottom: 18px;
@@ -51,8 +51,8 @@ main .hero {
 
 /* BOTONES */
 
-.hero-prev,
-.hero-next {
+.banner-prev,
+.banner-next {
   border: none;
   background: transparent;
   color: #150d00;
@@ -62,14 +62,14 @@ main .hero {
   padding: 0 4px;
 }
 
-.hero-prev:hover,
-.hero-next:hover {
-  color: #db941a;
+.banner-prev:hover,
+.banner-next:hover {
+  color: #f6cb2e;
 }
 
 /* PAGINACION */
 
-.heroSwiper .hero-pagination {
+.bannerSwiper .banner-pagination {
   position: static;
   width: auto;
   display: flex;
@@ -77,16 +77,16 @@ main .hero {
   gap: 8px;
 }
 
-.heroSwiper .hero-pagination .swiper-pagination-bullet {
+.bannerSwiper .banner-pagination .swiper-pagination-bullet {
   width: 9px;
   height: 9px;
-  background: #ff9d00;
+  background: #f6cb2e;
   opacity: 1;
   margin: 0;
 }
 
-.heroSwiper .hero-pagination .swiper-pagination-bullet-active {
+.bannerSwiper .banner-pagination .swiper-pagination-bullet-active {
   width: 28px;
   border-radius: 20px;
-  background: #ff9d00;
+  background: #f6cb2e;
 }

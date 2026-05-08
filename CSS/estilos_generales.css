@@ -20,7 +20,6 @@ body{
   /* font-family: "Bree Serif", serif; */
   font-family: "bree", sans-serif;
   background-image: url("../assets/General/fondo.png"); 
-  background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
 }

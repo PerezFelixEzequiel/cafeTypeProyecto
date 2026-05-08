@@ -1,7 +1,6 @@
 /*Carrusel*/
-
-.sectionCarrusel{
-  padding: 200px 100px;
+.section-productos{
+  padding: 200px 100px 50px 100px;
   margin: 20px;
   display: flex;
   flex-direction: row;
@@ -25,7 +24,7 @@
   padding: 15px;
   position: relative;
   overflow: visible;
-  background-color: #fdfbf830;
+  background-color: rgba(0, 0, 0, 0.26);
   border-radius: 25px;
 }
 
@@ -56,7 +55,7 @@
 }
 
 .btn-action-modal:hover{
-  background-color: #db941a;
+  background-color: #f6cb2e;
   color: #fff;
 }
 
@@ -71,11 +70,12 @@
   color: #ffffff;
   line-height: 1.45;
   font-weight: 100;
+
 }
 .btn-card{
   width: 90%;
   padding: 5px;
-  background-color: #ffc156;
+  background-color: #ebddc4;
   border: none;
   font-weight: 900;
   color: #532c00;
@@ -84,7 +84,7 @@
 }
 
 .btn-card:hover{
-  background-color: #ffab19;
+  background-color: #f6cb2e;
   color: #fff;
 }
 

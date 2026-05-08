@@ -16,10 +16,9 @@
     />
     <link rel="stylesheet" href="CSS/estilos_generales.css" />
     <link rel="stylesheet" href="CSS/header.css" />
-    <link rel="stylesheet" href="CSS/hero.css" />
-    <link rel="stylesheet" href="CSS/cards.css" />
-    <link rel="stylesheet" href="CSS/galeria.css" />
-    <link rel="stylesheet" href="CSS/contacto.css" />
+    <link rel="stylesheet" href="CSS/banner.css" />
+    <link rel="stylesheet" href="CSS/section-productos.css" />
+    <link rel="stylesheet" href="CSS/descubre-cafe.css"> 
     <link rel="stylesheet" href="CSS/footer.css" />
     <!--<link rel="stylesheet" href="CSS/style.css" />-->
     <title>CAFETYPE</title>
@@ -144,8 +143,8 @@
         </div>
         <nav class="navegacion">
           <ul>
-            <li><a href="#carrusel">Productos</a></li>
-            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#descubre-cafe">Tu cafe ideal</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <!--<li><a href="#">Tienda</a></li>-->
           </ul>
@@ -154,14 +153,14 @@
     </header>
     <main>
       <div class="container-inf">
-        <section class="hero">
-          <div class="swiper heroSwiper">
+        <section class="banner">
+          <div class="swiper bannerSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
                   src="./assets/hero_banner/banner-principal.png"
                   alt="banner principal"
-                  class="img-hero"
+                  class="img-banner"
                 />
               </div>
 
@@ -169,7 +168,7 @@
                 <img
                   src="./assets/hero_banner/cafe-colombia.png"
                   alt="café colombia"
-                  class="img-hero"
+                  class="img-banner"
                 />
               </div>
 
@@ -177,7 +176,7 @@
                 <img
                   src="./assets/hero_banner/cafe-españa.png"
                   alt="café españa"
-                  class="img-hero"
+                  class="img-banner"
                 />
               </div>
 
@@ -185,20 +184,20 @@
                 <img
                   src="./assets/hero_banner/cafe-francia.png"
                   alt="café francia"
-                  class="img-hero"
+                  class="img-banner"
                 />
               </div>
             </div>
 
-            <div class="hero-controls">
-              <button class="hero-prev">‹</button>
-              <div class="swiper-pagination hero-pagination"></div>
-              <button class="hero-next">›</button>
+            <div class="banner-controls">
+              <button class="banner-prev">‹</button>
+              <div class="swiper-pagination banner-pagination"></div>
+              <button class="banner-next">›</button>
             </div>
           </div>
         </section>
       </div>
-        <section class="sectionCarrusel" id="carrusel">
+        <section class="section-productos" id="productos">
           <!--Cafe Brasil-->
               <div class="cards-cafe brasil-selvatico">
                 <div class="container-img-card">
@@ -292,195 +291,178 @@
               </div>
             </div>
         </section>
-    
+        <section class="descubre-cafe" id="descubre-cafe">
+          <div class="container-inf">
+            <div class="container-descubre-cafe">
 
-      <!-- <section class="section-galery-sn" id="galeria">
-        <div class="containerInf">
-          <h3 class="titulo-galery">Elaboracion Propia con historia</h3>
-          <div class="grid-container">
-            <div class="item item-1 item-grid-border">
-              <div class="item-text-container">
-                <h4>Nuestro origen</h4>
+              <!-- Módulo 1: Introducción -->
+              <div class="modulo-1 cafe-ideal">
+                <h2>Encontrá tu Café Ideal</h2>
+
+                <div class="divider-cafe" aria-hidden="true">
+                  <span class="linea"></span>
+                  <img src="./assets/descubre-cafe/leaf-amarilla.svg" alt="" class="icono-cafe" />
+                  <span class="linea"></span>
+                </div>
+
                 <p>
-                  CAFETYPE nace de una idea simple: ofrecer un café que no solo
-                  se disfrute, sino que también se recuerde. Empezamos como un
-                  proyecto familiar con la intención de acercar una experiencia
-                  distinta, donde cada taza tenga identidad, dedicación y un
-                  sabor que hable por sí mismo. Desde el primer día, buscamos
-                  combinar calidad, cercanía y una estética que represente
-                  nuestra forma de entender el café.
+                  Respondé algunas preguntas y te recomendamos el café perfecto para vos.
                 </p>
+
+                <button 
+                  class="btn-descubrir" 
+                  type="button"
+                  data-action="start-test"
+                  aria-controls="form-test-cafe"
+                >
+                  <span>Descubrir mi perfil</span>
+
+                  <svg
+                    class="icono-flecha"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 12H19M13 6L19 12L13 18"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
               </div>
-            </div>
-            <div class="item item-2 item-grid-border"></div>
-            <div class="item item-3 item-grid-border"></div>
-            <div class="item item-4 item-grid-border">
-              <div class="item-text-container">
-                <h4>Elaboración y selección</h4>
-                <p>
-                  Cada café que forma parte de CAFETYPE es elegido con cuidado,
-                  pensando en su perfil, su origen y en la experiencia que puede
-                  ofrecer. Trabajamos con distintas variedades para lograr
-                  opciones más intensas, suaves o aromáticas, siempre
-                  manteniendo una línea propia. Nuestra elaboración busca
-                  respetar el carácter de cada grano y transformarlo en un
-                  producto que combine sabor, presencia y personalidad.
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <h3 class="titulo-galery">Nuestro hogar , cafe al paso . . .</h3>
-          <div class="grid-container">
-            <div class="item item-5 item-grid-border"></div>
-            <div class="item item-6 item-grid-border"></div>
-            <div class="item item-7 item-grid-border"></div>
-            <div class="item item-8 item-grid-border">
-              <div class="item-text-container">
-                <h4>Nuestro espacio</h4>
-                <p>
-                  Más que un punto de venta, CAFETYPE es un lugar pensado para
-                  conectar con el café de una manera más cercana. Nuestro
-                  espacio reúne el ritmo del café al paso con la calidez de un
-                  ambiente que invita a volver. Queremos que cada persona que
-                  nos visite encuentre no solo un buen producto, sino también
-                  una experiencia simple, auténtica y con identidad propia.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="waveDivider waveDividerReverse">
-          <svg
-            viewBox="0 0 1440 180"
-            preserveAspectRatio="none"
-            class="wave-reverse-white"
-          >
-            <path
-              d="M0,120
-         C180,170 360,175 520,150
-         C700,120 900,60 1120,55
-         C1260,52 1360,65 1440,85
-         L1440,0
-         L0,0
-         Z"
-            ></path>
-          </svg>
-        </div>
-      </section>
-      <section class="section_contactanos" id="contacto">
-        <div class="containerInf">
-          <div class="container_contactanos">
-            <img
-              src="./assets/contactanos/granos_de_cafe.png"
-              alt=""
-              class="granos_icon"
-            />
-            <div class="informacion_contacto">
-              <div class="contenedor_item_contacto">
-                <h3>Contactanos</h3>
-                <ul>
-                  <li class="contact_item">
-                    <img
-                      src="./assets/contactanos/pointer.svg"
-                      alt="pointer location"
-                    /><a
-                      href="https://www.google.com/maps/search/?api=1&query=Avenida+Mayorca+2323"
-                      target="_blank"
-                    >
-                      Avenida mayorca, 2323
-                    </a>
-                  </li>
-                  <li class="contact_item">
-                    <img src="./assets/contactanos/email.svg" alt="email" /><a
-                      href="mailto:cafetype@gmail.com"
-                    >
-                      cafetype@gmail.com
-                    </a>
-                  </li>
-                  <li class="contact_item">
-                    <img
-                      src="./assets/contactanos/telephone.svg"
-                      alt="telephone"
-                    /><a href="https://wa.me/543794762251" target="_blank">
-                      +54 9 3794-762251
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="formulario">
-              <h3>Registrate</h3>
-              <p>Descubre este mundo del cafe</p>
-              <form action="#">
-                <div>
-                  <label for="nombre">Nombre</label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombre"
-                    placeholder="Juan perez"
-                  />
-                </div>
+              <!-- Módulo 2: Test -->
+              <form class="modulo-2 test-cafe" id="form-test-cafe" data-test-cafe>
+                <!--Pregunta 1-->
+                <fieldset class="pregunta-cafe" data-question="intensidad">
+                  <legend>
+                    <span class="span-pregunta">1.</span>
+                    ¿Cómo te gusta el café?
+                  </legend>
 
-                <div>
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="nombre@email"
-                  />
-                </div>
-                <div>
-                  <label for="telefono">Teléfono</label>
-                  <input
-                    type="tel"
-                    id="telefono"
-                    name="telefono"
-                    placeholder="+54 9 9837-232312"
-                  />
-                </div>
-
-                <div>
-                  <label for="motivo">Motivo de consulta</label>
-                  <select id="motivo" name="motivo">
-                    <option value="">Selecciona una opción</option>
-                    <option value="productos">Consulta sobre productos</option>
-                    <option value="pedidos">Pedidos</option>
-                    <option value="sucursales">Sucursales</option>
-                    <option value="otro">Otra consulta</option>
-                  </select>
-                </div>
-
-                <div>
-                  <textarea
-                    name=""
-                    id=""
-                    placeholder="Escribe aqui tu mensaje..."
-                  ></textarea>
-                </div>
-
-                <div class="cont_recibir_promociones">
-                  <p>Quiero recibir novedades y promociones</p>
-                  <label for="promo">
-                    <input type="checkbox" id="promo" name="promo" />
+                  <label class="opcion-cafe">
+                    <input type="radio" name="intensidad" value="suave" />
+                    <span>Suave</span>
                   </label>
-                </div>
-                <input type="submit" value="Enviar" class="botn_form" />
+
+                  <label class="opcion-cafe">
+                    <input type="radio" name="intensidad" value="equilibrado" checked />
+                    <span>Equilibrado</span>
+                  </label>
+
+                  <label class="opcion-cafe">
+                    <input type="radio" name="intensidad" value="intenso" />
+                    <span>Intenso</span>
+                  </label>
+                </fieldset>
+                <!--Pregunta 2-->
+                <fieldset class="pregunta-cafe" data-question="metodo">
+                  <legend>
+                    <span class="span-pregunta">2.</span>
+                    ¿Qué método usás?
+                  </legend>
+
+                  <label class="opcion-cafe">
+                    <input type="radio" name="metodo" value="prensa-francesa" />
+                    <span>
+                      <img src="./assets/descubre-cafe/french-press-3-svgrepo-com.svg" alt="" />
+                      Prensa Francesa
+                    </span>
+                  </label>
+
+                  <label class="opcion-cafe">
+                    <input type="radio" name="metodo" value="espresso" checked />
+                    <span>
+                      <img src="./assets/descubre-cafe/coffe-machine.svg" alt="" />
+                      Espresso
+                    </span>
+                  </label>
+
+                  <label class="opcion-cafe">
+                    <input type="radio" name="metodo" value="filtro" />
+                    <span>
+                      <img src="./assets/descubre-cafe/coffee-pot-svgrepo-com.svg" alt="filtro" />
+                      Filtro
+                    </span>
+                  </label>
+
+                  <label class="opcion-cafe">
+                    <input type="radio" name="metodo" value="moka" />
+                    <span>
+                      <img src="./assets/descubre-cafe/moka-pot-svgrepo-com.svg" alt="" />
+                      Moka
+                    </span>
+                  </label>
+                </fieldset>
+                <!--Pregunta 3-->
+                <fieldset class="pregunta-cafe pregunta-3" data-question="notas">
+                  <legend>
+                    <span class="span-pregunta" >3.</span>
+                    ¿Qué notas preferís?
+                  </legend>
+
+                  <label class="opcion-cafe">
+                    <input type="radio" name="notas" value="chocolate" />
+                    <span>Chocolate</span>
+                  </label>
+
+                  <label class="opcion-cafe">
+                    <input type="radio" name="notas" value="frutales" checked />
+                    <span>Frutales</span>
+                  </label>
+
+                  <label class="opcion-cafe">
+                    <input type="radio" name="notas" value="nuez" />
+                    <span>Nuez</span>
+                  </label>
+
+                  <label class="opcion-cafe">
+                    <input type="radio" name="notas" value="caramelo" />
+                    <span>Caramelo</span>
+                  </label>
+                </fieldset>
               </form>
+
+              <!-- Módulo 3: Resultado -->
+              <article class="modulo-3 match-cafe" aria-live="polite" data-match-card>
+                <span class="match-label">Tu match:</span>
+
+                <h3 class="match-title" data-match-title>
+                  Colombia Supremo
+                </h3>
+                <div class="container-info-match">
+                   <img 
+                    class="match-img"
+                    src="./assets/cards/cafe-colombia.png" 
+                    alt="Paquete de café Colombia Supremo"
+                    data-match-img
+                  />
+                  <button 
+                      class="btn-ver-cafe" 
+                      type="button"
+                      data-action="view-product"
+                      data-product-id="colombia-supremo"
+                    >
+                      Ver este café
+                    </button>
+                </div>
+              </article>
             </div>
           </div>
-        </div>
-      </section> -->
+        </section>
     </main>
-    <!-- <footer>
+    <footer>
       <div class="containerInf footer_content">
         <p>
           & copy; 2026 <span>CAFETYPE</span>. Todos los derechos reservados.
         </p>
       </div>
-    </footer> -->
+    </footer>  
     <!--modal global -->
     <div id="modal" class="modal">
       <div class="modal-content">
@@ -571,19 +553,19 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script>
-      const heroSwiper = new Swiper(".heroSwiper", {
+      const bannerSwiper = new Swiper(".bannerSwiper", {
         loop: true,
         slidesPerView: 1,
         spaceBetween: 0,
 
         pagination: {
-          el: ".hero-pagination",
+          el: ".banner-pagination",
           clickable: true,
         },
 
         navigation: {
-          nextEl: ".hero-next",
-          prevEl: ".hero-prev",
+          nextEl: ".banner-next",
+          prevEl: ".banner-prev",
         },
       });
     </script>

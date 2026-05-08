@@ -1,0 +1,209 @@
+.container-inf .container-descubre-cafe{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.26);
+  border-radius: 25px;
+  padding: 20px;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
+/* Módulo 1: Introducción */
+.modulo-1 {
+  flex: 0 0 280px;
+  width: 280px;
+
+  border-right: solid 1px #f6cb2e;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.modulo-1 h2{
+  margin: 0;
+  padding: 0;
+  color: #f6cb2e;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.modulo-1 p{
+  font-weight: 100;
+  text-shadow: 0px 0px 5px #f6cb2e;
+}
+
+.modulo-1 .btn-descubrir{
+  background-color: #ebddc4;;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 95%;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+   color: #532c00;
+}
+
+.modulo-1 .btn-descubrir:hover{
+  background-color: #f6cb2e;
+  color: #fff;
+}
+
+.modulo-1 .btn-descubrir span{
+  font-size: 14px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.divider-cafe {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.divider-cafe .linea {
+  flex: 1;
+  height: 2px;
+  background-color: #f6cb2e;
+}
+
+.divider-cafe .icono-cafe {
+  width: 18px;
+  height: auto;
+  display: block;
+}
+
+/* Módulo 2: Test */
+.container-descubre-cafe form{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.container-descubre-cafe form .pregunta-cafe{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  border: none;
+  border-right:solid 1px #f6cb2e;
+
+  padding: 20px;
+  min-width: 170px;
+}
+
+.pregunta-cafe legend{
+  font-weight: 100;
+}
+
+
+
+.pregunta-cafe .span-pregunta{
+color: #f6cb2e;
+}
+
+/* LABEL GENERAL */
+.pregunta-cafe .opcion-cafe {
+  width: 130px;
+  cursor: pointer;
+}
+
+/* OCULTAMOS EL RADIO REAL */
+.pregunta-cafe .opcion-cafe input {
+  display: none;
+}
+
+/* BOTON VISUAL */
+.pregunta-cafe .opcion-cafe span {
+  width: 100%;
+  min-height: 36px;
+  padding: 8px 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50px;
+
+  background-color: transparent;
+  color: #ebddc4;
+
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+
+  transition: 0.25s ease;
+}
+
+/* ICONOS DENTRO DE LOS BOTONES */
+.pregunta-cafe .opcion-cafe span img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* HOVER */
+.pregunta-cafe .opcion-cafe:hover span {
+  border-color: #f6cb2e;
+  color: #f6cb2e;
+}
+
+/* OPCION SELECCIONADA */
+.pregunta-cafe .opcion-cafe input:checked + span {
+  background-color: #f6cb2e;
+  border-color: #f6cb2e;
+  color: #150d00;
+  font-weight: 700;
+  box-shadow: 0 0 12px rgba(246, 203, 46, 0.25);
+}
+
+form .pregunta-cafe.pregunta-3{
+  border-right: none;
+}
+
+/* Módulo 3: Resultado */
+.modulo-3{
+ flex: 0 0 260px;
+  width: 260px;
+
+  display: flex;
+  flex-direction: column;
+  border: solid 2px #f6cb2e;
+  border-radius: 15px;
+  padding: 20px;
+}
+ 
+.modulo-3 .container-info-match{
+  display: flex;
+}
+
+.modulo-3 .container-info-match p{
+  font-size: 10px;
+}
+
+.modulo-3 .match-img{
+  width: 120px;
+}
