@@ -16,6 +16,7 @@
 .modulo-1 {
   flex: 0 0 280px;
   width: 280px;
+   align-self: stretch;
 
   border-right: solid 1px #f6cb2e;
   margin: 0;
@@ -187,16 +188,19 @@ form .pregunta-cafe.pregunta-3{
 /* Módulo 3: Resultado */
 .modulo-3{
  flex: 0 0 260px;
+  align-self: stretch;
   width: 260px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+   justify-content: space-between;
   align-items: center;
 
   border: solid 2px #f6cb2e;
   border-radius: 15px;
   padding: 20px;
+  box-sizing: border-box;
+
 }
  
 
