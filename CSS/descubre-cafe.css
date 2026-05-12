@@ -181,6 +181,14 @@ color: #f6cb2e;
   box-shadow: 0 0 12px rgba(246, 203, 46, 0.25);
 }
 
+/* Cuando la opción está seleccionada, el SVG se vuelve negro */
+.pregunta-cafe .opcion-cafe input:checked + span img {
+  filter: brightness(0);
+  opacity: 1;
+}
+
+
+
 form .pregunta-cafe.pregunta-3{
   border-right: none;
 }
@@ -232,5 +240,5 @@ form .pregunta-cafe.pregunta-3{
 
 .modulo-3 .btn-ver-cafe:hover{
   background-color: #f6cb2e;
-  color: #ff0000;
+  color: #fff;
 }

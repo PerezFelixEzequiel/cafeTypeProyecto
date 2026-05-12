@@ -1,0 +1,69 @@
+.resenas {
+  width: 100%;
+  background-color: #ebddc4;
+  padding: 40px 0;
+  overflow: hidden;
+  margin: 50px 0px;
+}
+
+.resenas-track {
+  display: flex;
+  width: max-content;
+  animation: moverResenas 25s linear infinite;
+}
+
+.resenas-track:hover {
+  animation-play-state: paused;
+}
+
+.resenas-grupo {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.card-resenas {
+  flex: 0 0 380px;
+  min-height: 120px;
+
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 18px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  text-align: center;
+}
+
+.container-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.container-stars span {
+  color: #f6b23c;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.card-resenas p {
+  margin: 0;
+  color: #3b2417;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Animación hacia la izquierda */
+@keyframes moverResenas {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
