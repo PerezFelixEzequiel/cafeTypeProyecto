@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="CSS/footer.css" />
     <link rel="stylesheet" href="CSS/explora.css" />
     <link rel="stylesheet" href="CSS/registrate.css" />
+    <link rel="stylesheet" href="CSS/modal-card.css">
     <!--<link rel="stylesheet" href="CSS/style.css" />-->
     <title>CAFETYPE</title>
   </head>
@@ -550,6 +551,7 @@
           </div>
         </div>
       </section>
+      <!--Descubre Cafetype-->
       <section class="explora-cafetype" id="explora-cafetype">
         <div class="container-explora">
           <ul class="explora-grid">
@@ -648,6 +650,7 @@
           </ul>
         </div>
       </section>
+      <!--Pequeño registro-->
       <section class="section-registrate">
         <div class="container-registro">
           <div class="texto-registro">
@@ -698,111 +701,12 @@
     <div id="modal" class="modal">
       <div class="modal-content">
         <span id="close-modal-btn" class="close">&times;</span>
-        <div class="card1">
-          <div class="card1Etiqueta"><p>Alta intensidad</p></div>
-          <div class="cardImg"></div>
-          <h2>Café Brasil Selvático</h2>
-          <p class="origen"><span>Origen:</span> Brasil</p>
-          <p class="origen"><span>Tostado:</span> Medio oscuro</p>
-          <p class="card1Text">
-            Un café intenso y envolvente, con notas calidas y un perfil ideal
-            para quienes disfrutan una taza con caracter.
-          </p>
-        </div>
-        <div class="card2">
-          <div class="card2-perfil-sabor">
-            <h2>Perfil de Sabor</h2>
-            <!-- range slider -->
-            <div class="contenedor-range-slider">
-              <div class="sabor-item">
-                <span>Amargor</span>
-                <div class="barra">
-                  <div class="barra-nivel-4"></div>
-                </div>
-              </div>
-              <div class="sabor-item">
-                <span>Acidez</span>
-                <div class="barra">
-                  <div class="barra-nivel-5"></div>
-                </div>
-              </div>
-              <div class="sabor-item">
-                <span>Cuerpo</span>
-                <div class="barra">
-                  <div class="barra-nivel-4"></div>
-                </div>
-              </div>
-              <div class="sabor-item">
-                <span>Intensidad</span>
-                <div class="barra">
-                  <div class="barra-nivel-6"></div>
-                </div>
-              </div>
-              <div class="sabor-item">
-                <span>Dulzor</span>
-                <div class="barra">
-                  <div class="barra-nivel-5"></div>
-                </div>
-              </div>
-            </div>
-            <!-- range slider -->
-          </div>
-          <div class="card2-detalles-container">
-            <h3>Detalles</h3>
-            <ul>
-              <li>
-                <img
-                  src="./assets/cards/leaf-svgrepo-com.svg"
-                  alt="tree leaf"
-                />
-                <span>Color: </span>oscuro
-              </li>
-              <li>
-                <img
-                  src="./assets/cards/coffee-grinder-svgrepo-com.svg"
-                  alt="coffe grinder"
-                />
-                <span>Molienda ideal: </span>media
-              </li>
-              <li>
-                <img src="./assets/cards/drop-svgrepo-com.svg" alt="drop" />
-                <span>Notas destacadas: </span>chocolate,nuez,caramelo
-              </li>
-              <li>
-                <img
-                  src="./assets/cards/french-press-svgrepo-com.svg"
-                  alt="french press"
-                />
-                <span> Metodo ideal: </span>prensa francesa
-              </li>
-            </ul>
-          </div>
-          <button class="btn-comprar">Comprar</button>
         </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-    <script>
-      const bannerSwiper = new Swiper(".bannerSwiper", {
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 0,
-
-        pagination: {
-          el: ".banner-pagination",
-          clickable: true,
-        },
-
-        navigation: {
-          nextEl: ".banner-next",
-          prevEl: ".banner-prev",
-        },
-      });
-    </script>
-
+    <script src="./JS/swiper-banner.js"></script>
     <script src="./JS/card-modal.js"></script>
-
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
