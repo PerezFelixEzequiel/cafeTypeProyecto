@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="CSS/resenas.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
     <link rel="stylesheet" href="CSS/explora.css" />
+    <link rel="stylesheet" href="CSS/registrate.css" />
     <!--<link rel="stylesheet" href="CSS/style.css" />-->
     <title>CAFETYPE</title>
   </head>
@@ -551,8 +552,6 @@
       </section>
       <section class="explora-cafetype" id="explora-cafetype">
         <div class="container-explora">
-         
-
           <ul class="explora-grid">
             <li class="explora-card">
               <a href="#nosotros" class="explora-link" data-card="nosotros">
@@ -561,7 +560,6 @@
                   alt=""
                   class="explora-icon"
                   aria-hidden="true"
-                
                 />
 
                 <div class="explora-texto">
@@ -583,7 +581,6 @@
                   alt=""
                   class="explora-icon"
                   aria-hidden="true"
-                  
                 />
 
                 <div class="explora-texto">
@@ -610,7 +607,6 @@
                   alt=""
                   class="explora-icon"
                   aria-hidden="true"
-                  
                 />
 
                 <div class="explora-texto">
@@ -636,7 +632,6 @@
                   alt=""
                   class="explora-icon"
                   aria-hidden="true"
-                 
                 />
 
                 <div class="explora-texto">
@@ -653,14 +648,52 @@
           </ul>
         </div>
       </section>
+      <section class="section-registrate">
+        <div class="container-registro">
+          <div class="texto-registro">
+            <h3>El irresistible aroma de las novedades</h3>
+            <p>
+              Regístrate para recibir información, noticias, concursos y
+              nuestras promociones. Jamás compartiremos tu correo electrónico
+              con terceros y no enviamos spam. ¡Te lo prometemos! 
+            </p>
+          </div>
+          <lottie-player
+            src="./assets/registrate/maquina-de-cafe.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+            class="animacion-cafe"
+          ></lottie-player>
+          <div class="form-registro">
+            <form action="">
+              <input type="email" placeholder="Tu correo electrónico" />
+              <button>Registrate</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
-    <!-- <footer>
-      <div class="containerInf footer_content">
-        <p>
-          & copy; 2026 <span>CAFETYPE</span>. Todos los derechos reservados.
-        </p>
+    <footer class="footer">
+      <div class="waveDivider">
+        <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
+          <path
+            d="M0,100
+        C180,155 380,150 600,120
+        C850,85 1080,35 1240,40
+        C1330,45 1390,75 1440,100
+        L1440,180
+        L0,180
+        Z"
+          ></path>
+        </svg>
       </div>
-    </footer>   -->
+
+      <div class="containerInf footer_content">
+        <p>&copy; 2026 <span>CAFETYPE</span>. Todos los derechos reservados.</p>
+      </div>
+    </footer>
     <!--modal global -->
     <div id="modal" class="modal">
       <div class="modal-content">
@@ -769,5 +802,7 @@
     </script>
 
     <script src="./JS/card-modal.js"></script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

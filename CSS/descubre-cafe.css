@@ -58,7 +58,7 @@
   text-align: center;
   justify-content: center;
   cursor: pointer;
-   color: #532c00;
+   color: #000000;
 }
 
 .modulo-1 .btn-descubrir:hover{
@@ -70,6 +70,7 @@
   font-size: 14px;
   font-weight: bolder;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .divider-cafe {
@@ -147,7 +148,7 @@ color: #f6cb2e;
   gap: 8px;
 
   border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 50px;
+  border-radius: 10px;
 
   background-color: transparent;
   color: #ebddc4;

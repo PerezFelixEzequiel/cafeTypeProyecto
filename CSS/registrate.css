@@ -1,0 +1,116 @@
+.section-registrate {
+  width: 100%;
+  padding: 35px 40px;
+  
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container-registro {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 35px;
+
+  background-color: rgba(12, 10, 5, 0.92);
+  border: solid 2px #f6cb2e;
+  border-radius: 20px;
+
+  padding: 24px 48px;
+  box-sizing: border-box;
+}
+
+/* Texto izquierdo */
+.texto-registro {
+  flex: 1;
+  text-align: left;
+}
+
+.texto-registro h3 {
+  max-width: 360px;
+  margin: 0 0 18px;
+
+  color: #f6cb2e;
+  font-size: 1.6rem;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.texto-registro p {
+  max-width: 420px;
+  margin: 0;
+
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  font-weight: 400;
+}
+
+/* Animación del centro */
+.animacion-cafe {
+  flex: 0 0 170px;
+  width: 170px;
+  height: 170px;
+}
+
+/* Formulario derecho */
+.form-registro {
+  flex: 1;
+}
+
+.form-registro form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-registro input {
+  width: 100%;
+  padding: 13px 18px;
+
+  border: none;
+  outline: none;
+  border-radius: 10px;
+
+  background-color: #ffffff;
+  color: #151005;
+
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.form-registro input::placeholder {
+  color: #777;
+}
+
+.form-registro button {
+  width: 100%;
+  padding: 13px 18px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: #ebddc4;
+  color: #151005;
+
+  font-size: 0.95rem;
+  font-weight: 800;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.form-registro button:hover {
+  background-color: #f6cb2e;
+  color: #151005;
+}

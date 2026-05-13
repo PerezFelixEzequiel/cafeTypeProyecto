@@ -128,7 +128,7 @@ transition: all .5s ease;
   max-width: 820px;
   height: 100%;
   border: 1px solid #d9c4a8;
-  border-radius: 25px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: stretch;

@@ -1,6 +1,6 @@
 .explora-cafetype {
   width: 100%;
-  margin: 40px 0;
+  margin: 20px 0;
   padding: 55px 0;
 }
 
@@ -85,7 +85,7 @@
   padding: 9px 18px;
 
   border: 1px solid #f6cb2e;
-  border-radius: 999px;
+  border-radius: 10px;
 
   color: #f6cb2e;
   font-size: 0.82rem;
