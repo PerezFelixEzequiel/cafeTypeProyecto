@@ -18,9 +18,10 @@
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/banner.css" />
     <link rel="stylesheet" href="CSS/section-productos.css" />
-    <link rel="stylesheet" href="CSS/descubre-cafe.css"> 
-    <link rel="stylesheet" href="CSS/resenas.css">
+    <link rel="stylesheet" href="CSS/descubre-cafe.css" />
+    <link rel="stylesheet" href="CSS/resenas.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/explora.css" />
     <!--<link rel="stylesheet" href="CSS/style.css" />-->
     <title>CAFETYPE</title>
   </head>
@@ -200,319 +201,458 @@
         </section>
       </div>
       <!--Productos-->
-        <section class="section-productos" id="productos">
-          <!--Cafe Brasil-->
-              <div class="cards-cafe brasil-selvatico">
-                <div class="container-img-card">
-                  <img
-                    src="./assets/cards/cafe-brasil.png"
-                    alt="cafe brasil selvatico"
-                    class="img-card-cafe"
-                  />
+      <section class="section-productos" id="productos">
+        <!--Cafe Brasil-->
+        <div class="cards-cafe brasil-selvatico">
+          <div class="container-img-card">
+            <img
+              src="./assets/cards/cafe-brasil.png"
+              alt="cafe brasil selvatico"
+              class="img-card-cafe"
+            />
 
-                  <button class="btn-action-modal open-modal-btn">
-                    Ver mas
-                  </button>
-                </div>
+            <button class="btn-action-modal open-modal-btn">Ver mas</button>
+          </div>
 
-                <div class="container-descripcion-card">
-                  <p class="descripcion-card">
-                    Café intenso y envolvente con notas cálidas y perfil con
-                    carácter. Rico con personalidad, tostado que envidian.
-                  </p>
-                </div>
-                <button class="btn-card">Comprar</button>
+          <div class="container-descripcion-card">
+            <p class="descripcion-card">
+              Café intenso y envolvente con notas cálidas y perfil con carácter.
+              Rico con personalidad, tostado que envidian.
+            </p>
+          </div>
+          <button class="btn-card">Comprar</button>
+        </div>
+
+        <!--Cafe Colombia-->
+        <div class="cards-cafe brasil-selvatico">
+          <div class="container-img-card">
+            <img
+              src="./assets/cards/cafe-colombia.png"
+              alt="cafe brasil selvatico"
+              class="img-card-cafe"
+            />
+
+            <button class="btn-action-modal open-modal-btn">Ver mas</button>
+          </div>
+
+          <div class="container-descripcion-card">
+            <p class="descripcion-card">
+              Café intenso y envolvente con notas cálidas y perfil con carácter.
+              Rico con personalidad, tostado que envidian.
+            </p>
+          </div>
+          <button class="btn-card">Comprar</button>
+        </div>
+
+        <!--Cafe España-->
+        <div class="cards-cafe brasil-selvatico">
+          <div class="container-img-card">
+            <img
+              src="./assets/cards/cafe-espana.png"
+              alt="cafe brasil selvatico"
+              class="img-card-cafe"
+            />
+
+            <button class="btn-action-modal open-modal-btn">Ver mas</button>
+          </div>
+
+          <div class="container-descripcion-card">
+            <p class="descripcion-card">
+              Café intenso y envolvente con notas cálidas y perfil con carácter.
+              Rico con personalidad, tostado que envidian.
+            </p>
+          </div>
+          <button class="btn-card">Comprar</button>
+        </div>
+
+        <!--Cafe Francia-->
+        <div class="cards-cafe brasil-selvatico">
+          <div class="container-img-card">
+            <img
+              src="./assets/cards/cafe-francia.png"
+              alt="cafe brasil selvatico"
+              class="img-card-cafe"
+            />
+
+            <button class="btn-action-modal open-modal-btn">Ver mas</button>
+          </div>
+
+          <div class="container-descripcion-card">
+            <p class="descripcion-card">
+              Café intenso y envolvente con notas cálidas y perfil con carácter.
+              Rico con personalidad, tostado que envidian.
+            </p>
+          </div>
+          <button class="btn-card">Comprar</button>
+        </div>
+      </section>
+      <!--Descubre tu cafe-->
+      <section class="descubre-cafe" id="descubre-cafe">
+        <div class="container-inf">
+          <div class="container-descubre-cafe">
+            <!-- Módulo 1: Introducción -->
+            <div class="modulo-1 cafe-ideal">
+              <h2>Encontrá tu Café Ideal</h2>
+
+              <div class="divider-cafe" aria-hidden="true">
+                <span class="linea"></span>
+                <img
+                  src="./assets/descubre-cafe/leaf-amarilla.svg"
+                  alt=""
+                  class="icono-cafe"
+                />
+                <span class="linea"></span>
               </div>
-            </div>
-            <!--Cafe Colombia-->
-            <div class="cards-cafe brasil-selvatico">
-                <div class="container-img-card">
-                  <img
-                    src="./assets/cards/cafe-colombia.png"
-                    alt="cafe brasil selvatico"
-                    class="img-card-cafe"
-                  />
 
-                  <button class="btn-action-modal open-modal-btn">
-                    Ver mas
-                  </button>
-                </div>
+              <p>
+                Respondé algunas preguntas y te recomendamos el café perfecto
+                para vos.
+              </p>
 
-                <div class="container-descripcion-card">
-                  <p class="descripcion-card">
-                    Café intenso y envolvente con notas cálidas y perfil con
-                    carácter. Rico con personalidad, tostado que envidian.
-                  </p>
-                </div>
-                <button class="btn-card">Comprar</button>
-              </div>
-            </div>
-            <!--Cafe España-->
-            <div class="cards-cafe brasil-selvatico">
-                <div class="container-img-card">
-                  <img
-                    src="./assets/cards/cafe-espana.png"
-                    alt="cafe brasil selvatico"
-                    class="img-card-cafe"
-                  />
+              <button
+                class="btn-descubrir"
+                type="button"
+                data-action="start-test"
+                aria-controls="form-test-cafe"
+              >
+                <span>Descubrir mi perfil</span>
 
-                  <button class="btn-action-modal open-modal-btn">
-                    Ver mas
-                  </button>
-                </div>
-
-                <div class="container-descripcion-card">
-                  <p class="descripcion-card">
-                    Café intenso y envolvente con notas cálidas y perfil con
-                    carácter. Rico con personalidad, tostado que envidian.
-                  </p>
-                </div>
-                <button class="btn-card">Comprar</button>
-              </div>
-            </div>
-            <!--Cafe Francia-->
-            <div class="cards-cafe brasil-selvatico">
-                <div class="container-img-card">
-                  <img
-                    src="./assets/cards/cafe-francia.png"
-                    alt="cafe brasil selvatico"
-                    class="img-card-cafe"
-                  />
-
-                  <button class="btn-action-modal open-modal-btn">
-                    Ver mas
-                  </button>
-                </div>
-
-                <div class="container-descripcion-card">
-                  <p class="descripcion-card">
-                    Café intenso y envolvente con notas cálidas y perfil con
-                    carácter. Rico con personalidad, tostado que envidian.
-                  </p>
-                </div>
-                <button class="btn-card">Comprar</button>
-              </div>
-            </div>
-        </section>
-        <!--Descubre tu cafe-->
-        <section class="descubre-cafe" id="descubre-cafe">
-          <div class="container-inf">
-            <div class="container-descubre-cafe">
-
-              <!-- Módulo 1: Introducción -->
-              <div class="modulo-1 cafe-ideal">
-                <h2>Encontrá tu Café Ideal</h2>
-
-                <div class="divider-cafe" aria-hidden="true">
-                  <span class="linea"></span>
-                  <img src="./assets/descubre-cafe/leaf-amarilla.svg" alt="" class="icono-cafe" />
-                  <span class="linea"></span>
-                </div>
-
-                <p>
-                  Respondé algunas preguntas y te recomendamos el café perfecto para vos.
-                </p>
-
-                <button 
-                  class="btn-descubrir" 
-                  type="button"
-                  data-action="start-test"
-                  aria-controls="form-test-cafe"
+                <svg
+                  class="icono-flecha"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
                 >
-                  <span>Descubrir mi perfil</span>
-
-                  <svg
-                    class="icono-flecha"
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M5 12H19M13 6L19 12L13 18"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
-
-              <!-- Módulo 2: Test -->
-              <form class="modulo-2 test-cafe" id="form-test-cafe" data-test-cafe>
-                <!--Pregunta 1-->
-                <fieldset class="pregunta-cafe" data-question="intensidad">
-                  <legend>
-                    <span class="span-pregunta">1.</span>
-                    ¿Cómo te gusta el café?
-                  </legend>
-
-                  <label class="opcion-cafe">
-                    <input type="radio" name="intensidad" value="suave" />
-                    <span>Suave</span>
-                  </label>
-
-                  <label class="opcion-cafe">
-                    <input type="radio" name="intensidad" value="equilibrado" checked />
-                    <span>Equilibrado</span>
-                  </label>
-
-                  <label class="opcion-cafe">
-                    <input type="radio" name="intensidad" value="intenso" />
-                    <span>Intenso</span>
-                  </label>
-                </fieldset>
-                <!--Pregunta 2-->
-                <fieldset class="pregunta-cafe" data-question="metodo">
-                  <legend>
-                    <span class="span-pregunta">2.</span>
-                    ¿Qué método usás?
-                  </legend>
-
-                  <label class="opcion-cafe">
-                    <input type="radio" name="metodo" value="prensa-francesa" />
-                    <span>
-                      <img src="./assets/descubre-cafe/french-press-3-svgrepo-com.svg" alt="" />
-                      Prensa Francesa
-                    </span>
-                  </label>
-
-                  <label class="opcion-cafe">
-                    <input type="radio" name="metodo" value="espresso" checked />
-                    <span>
-                      <img src="./assets/descubre-cafe/coffe-machine.svg" alt="" />
-                      Espresso
-                    </span>
-                  </label>
-
-                  <label class="opcion-cafe">
-                    <input type="radio" name="metodo" value="filtro" />
-                    <span>
-                      <img src="./assets/descubre-cafe/coffee-pot-svgrepo-com.svg" alt="filtro" />
-                      Filtro
-                    </span>
-                  </label>
-
-                  <label class="opcion-cafe">
-                    <input type="radio" name="metodo" value="moka" />
-                    <span>
-                      <img src="./assets/descubre-cafe/moka-pot-svgrepo-com.svg" alt="" />
-                      Moka
-                    </span>
-                  </label>
-                </fieldset>
-                <!--Pregunta 3-->
-                <fieldset class="pregunta-cafe pregunta-3" data-question="notas">
-                  <legend>
-                    <span class="span-pregunta" >3.</span>
-                    ¿Qué notas preferís?
-                  </legend>
-
-                  <label class="opcion-cafe">
-                    <input type="radio" name="notas" value="chocolate" />
-                    <span>Chocolate</span>
-                  </label>
-
-                  <label class="opcion-cafe">
-                    <input type="radio" name="notas" value="frutales" checked />
-                    <span>Frutales</span>
-                  </label>
-
-                  <label class="opcion-cafe">
-                    <input type="radio" name="notas" value="nuez" />
-                    <span>Nuez</span>
-                  </label>
-
-                  <label class="opcion-cafe">
-                    <input type="radio" name="notas" value="caramelo" />
-                    <span>Caramelo</span>
-                  </label>
-                </fieldset>
-              </form>
-
-              <!-- Módulo 3: Resultado -->
-              <article class="modulo-3 match-cafe" aria-live="polite" data-match-card>
-                <span class="match-label">Tu match:</span>
-
-                <h3 class="match-title" data-match-title>
-                  Colombia Supremo
-                </h3>
-                
-                   <img 
-                    class="match-img"
-                    src="./assets/cards/cafe-colombia.png" 
-                    alt="Paquete de café Colombia Supremo"
-                    data-match-img
+                  <path
+                    d="M5 12H19M13 6L19 12L13 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   />
-                  <button 
-                      class="btn-ver-cafe" 
-                      type="button"
-                      data-action="view-product"
-                      data-product-id="colombia-supremo"
-                    >
-                      Ver este café
-                    </button>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Módulo 2: Test -->
+            <form class="modulo-2 test-cafe" id="form-test-cafe" data-test-cafe>
+              <!--Pregunta 1-->
+              <fieldset class="pregunta-cafe" data-question="intensidad">
+                <legend>
+                  <span class="span-pregunta">1.</span>
+                  ¿Cómo te gusta el café?
+                </legend>
+
+                <label class="opcion-cafe">
+                  <input type="radio" name="intensidad" value="suave" />
+                  <span>Suave</span>
+                </label>
+
+                <label class="opcion-cafe">
+                  <input
+                    type="radio"
+                    name="intensidad"
+                    value="equilibrado"
+                    checked
+                  />
+                  <span>Equilibrado</span>
+                </label>
+
+                <label class="opcion-cafe">
+                  <input type="radio" name="intensidad" value="intenso" />
+                  <span>Intenso</span>
+                </label>
+              </fieldset>
+              <!--Pregunta 2-->
+              <fieldset class="pregunta-cafe" data-question="metodo">
+                <legend>
+                  <span class="span-pregunta">2.</span>
+                  ¿Qué método usás?
+                </legend>
+
+                <label class="opcion-cafe">
+                  <input type="radio" name="metodo" value="prensa-francesa" />
+                  <span>
+                    <img
+                      src="./assets/descubre-cafe/french-press-3-svgrepo-com.svg"
+                      alt=""
+                    />
+                    Prensa Francesa
+                  </span>
+                </label>
+
+                <label class="opcion-cafe">
+                  <input type="radio" name="metodo" value="espresso" checked />
+                  <span>
+                    <img
+                      src="./assets/descubre-cafe/coffe-machine.svg"
+                      alt=""
+                    />
+                    Espresso
+                  </span>
+                </label>
+
+                <label class="opcion-cafe">
+                  <input type="radio" name="metodo" value="filtro" />
+                  <span>
+                    <img
+                      src="./assets/descubre-cafe/coffee-pot-svgrepo-com.svg"
+                      alt="filtro"
+                    />
+                    Filtro
+                  </span>
+                </label>
+
+                <label class="opcion-cafe">
+                  <input type="radio" name="metodo" value="moka" />
+                  <span>
+                    <img
+                      src="./assets/descubre-cafe/moka-pot-svgrepo-com.svg"
+                      alt=""
+                    />
+                    Moka
+                  </span>
+                </label>
+              </fieldset>
+              <!--Pregunta 3-->
+              <fieldset class="pregunta-cafe pregunta-3" data-question="notas">
+                <legend>
+                  <span class="span-pregunta">3.</span>
+                  ¿Qué notas preferís?
+                </legend>
+
+                <label class="opcion-cafe">
+                  <input type="radio" name="notas" value="chocolate" />
+                  <span>Chocolate</span>
+                </label>
+
+                <label class="opcion-cafe">
+                  <input type="radio" name="notas" value="frutales" checked />
+                  <span>Frutales</span>
+                </label>
+
+                <label class="opcion-cafe">
+                  <input type="radio" name="notas" value="nuez" />
+                  <span>Nuez</span>
+                </label>
+
+                <label class="opcion-cafe">
+                  <input type="radio" name="notas" value="caramelo" />
+                  <span>Caramelo</span>
+                </label>
+              </fieldset>
+            </form>
+
+            <!-- Módulo 3: Resultado -->
+            <article
+              class="modulo-3 match-cafe"
+              aria-live="polite"
+              data-match-card
+            >
+              <span class="match-label">Tu match:</span>
+
+              <h3 class="match-title" data-match-title>Colombia Supremo</h3>
+
+              <img
+                class="match-img"
+                src="./assets/cards/cafe-colombia.png"
+                alt="Paquete de café Colombia Supremo"
+                data-match-img
+              />
+              <button
+                class="btn-ver-cafe"
+                type="button"
+                data-action="view-product"
+                data-product-id="colombia-supremo"
+              >
+                Ver este café
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Reseñas -->
+      <section class="resenas">
+        <div class="resenas-track">
+          <!-- Grupo original -->
+          <div class="resenas-grupo">
+            <div class="card-resenas">
+              <div class="container-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <p>
+                El café llegó rápido y en perfectas condiciones. El olor y el
+                sabor es buenísimo.
+              </p>
+            </div>
+
+            <div class="card-resenas">
+              <div class="container-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <p>
+                Tenía mis dudas sobre las cápsulas pero me explicaron muy bien
+                cómo usarlas.
+              </p>
+            </div>
+
+            <div class="card-resenas">
+              <div class="container-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <p>
+                Los conocí por las cápsulas recargables pero sus cafés son un
+                viaje de ida.
+              </p>
+            </div>
+          </div>
+
+          <!-- Grupo duplicado para efecto infinito -->
+          <div class="resenas-grupo" aria-hidden="true">
+            <div class="card-resenas">
+              <div class="container-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <p>
+                El café llegó rápido y en perfectas condiciones. El olor y el
+                sabor es buenísimo.
+              </p>
+            </div>
+
+            <div class="card-resenas">
+              <div class="container-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <p>
+                Tenía mis dudas sobre las cápsulas pero me explicaron muy bien
+                cómo usarlas.
+              </p>
+            </div>
+
+            <div class="card-resenas">
+              <div class="container-stars">
+                <span>★</span><span>★</span><span>★</span><span>★</span
+                ><span>★</span>
+              </div>
+              <p>
+                Los conocí por las cápsulas recargables pero sus cafés son un
+                viaje de ida.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="explora-cafetype" id="explora-cafetype">
+        <div class="container-explora">
+         
+
+          <ul class="explora-grid">
+            <li class="explora-card">
+              <a href="#nosotros" class="explora-link" data-card="nosotros">
+                <img
+                  src="./assets/explora/group-team-svgrepo-com.svg"
+                  alt=""
+                  class="explora-icon"
+                  aria-hidden="true"
                 
-              </article>
-            </div>
-          </div>
-        </section>
-        <!-- Reseñas -->
-        <section class="resenas">
-          <div class="resenas-track">
+                />
 
-            <!-- Grupo original -->
-            <div class="resenas-grupo">
-              <div class="card-resenas">
-                <div class="container-stars">
-                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                <div class="explora-texto">
+                  <h3>Nosotros</h3>
+                  <p>
+                    Conocé la historia de CAFETYPE y nuestra forma de
+                    seleccionar cada café.
+                  </p>
                 </div>
-                <p>El café llegó rápido y en perfectas condiciones. El olor y el sabor es buenísimo.</p>
-              </div>
 
-              <div class="card-resenas">
-                <div class="container-stars">
-                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                <span class="explora-cta">Saber más</span>
+              </a>
+            </li>
+
+            <li class="explora-card">
+              <a href="#tienda" class="explora-link" data-card="tienda">
+                <img
+                  src="./assets/explora/market.svg"
+                  alt=""
+                  class="explora-icon"
+                  aria-hidden="true"
+                  
+                />
+
+                <div class="explora-texto">
+                  <h3>Tienda online</h3>
+                  <p>
+                    Explorá nuestros cafés disponibles y encontrá el blend ideal
+                    para vos. lorem
+                  </p>
                 </div>
-                <p>Tenía mis dudas sobre las cápsulas pero me explicaron muy bien cómo usarlas.</p>
-              </div>
 
-              <div class="card-resenas">
-                <div class="container-stars">
-                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                <span class="explora-cta">Ir a tienda</span>
+              </a>
+            </li>
+
+            <li class="explora-card">
+              <a
+                href="https://wa.me/549XXXXXXXXXX"
+                class="explora-link"
+                data-card="whatsapp"
+                target="_blank"
+              >
+                <img
+                  src="./assets/explora/contact-new-svgrepo-com.svg"
+                  alt=""
+                  class="explora-icon"
+                  aria-hidden="true"
+                  
+                />
+
+                <div class="explora-texto">
+                  <h3>WhatsApp</h3>
+                  <p>
+                    Hablá con nosotros para recibir ayuda, recomendaciones o
+                    resolver dudas.
+                  </p>
                 </div>
-                <p>Los conocí por las cápsulas recargables pero sus cafés son un viaje de ida.</p>
-              </div>
-            </div>
 
-            <!-- Grupo duplicado para efecto infinito -->
-            <div class="resenas-grupo" aria-hidden="true">
-              <div class="card-resenas">
-                <div class="container-stars">
-                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                <span class="explora-cta">Contactar</span>
+              </a>
+            </li>
+
+            <li class="explora-card">
+              <a
+                href="#promociones"
+                class="explora-link"
+                data-card="promociones"
+              >
+                <img
+                  src="./assets/explora/promotion-segments-svgrepo-com.svg"
+                  alt=""
+                  class="explora-icon"
+                  aria-hidden="true"
+                 
+                />
+
+                <div class="explora-texto">
+                  <h3>Promociones</h3>
+                  <p>
+                    Descubrí ofertas especiales, combos y beneficios por tiempo
+                    limitado.
+                  </p>
                 </div>
-                <p>El café llegó rápido y en perfectas condiciones. El olor y el sabor es buenísimo.</p>
-              </div>
 
-              <div class="card-resenas">
-                <div class="container-stars">
-                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                </div>
-                <p>Tenía mis dudas sobre las cápsulas pero me explicaron muy bien cómo usarlas.</p>
-              </div>
-
-              <div class="card-resenas">
-                <div class="container-stars">
-                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                </div>
-                <p>Los conocí por las cápsulas recargables pero sus cafés son un viaje de ida.</p>
-              </div>
-            </div>
-
-          </div>
-        </section>
+                <span class="explora-cta">Ver promos</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <!-- <footer>
       <div class="containerInf footer_content">
