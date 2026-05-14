@@ -16,33 +16,139 @@
 
 .close{
   position: absolute;
-color: #532c00;
+color: #ebddc4;
 font-size: 50px;
 font-weight: bold;
-top: 0;
-left: 10px;
+top: -10px;
+left: -50px;
 cursor: pointer;
 transition: all .5s ease;
 }
 
 .close:hover{
-  color: #db941a;
+  color: #f6cb2e;
   transform: scale(1.2);
 }
 
 .modal-content{
   width: 100%;
-  max-width: 520px;
+  max-width: 420px;
   height: 100%;
-  border-radius: 10px;
   display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-direction: row;
-  padding: 15px;
-  gap: 20px;
+  flex-direction: column;
+  padding: 20px ;
+  gap: 10px;
   background-color: #ebddc4;
   box-shadow: 0 0 10px 5px #0000003d;
   position: relative;
 }
 
+.img-modal{
+  width: 370px;
+  height: 370px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px #532c00c2;
+}
+
+
+
+.cafe-titulo-modal{
+  color: #532c00;
+  font-size: 28px;
+}
+
+.cafe-precio-modal{
+  color: #532c00c7;
+  font-size: 25px;
+}
+
+.cafe-descripcion{
+  color: #532c00c7;
+}
+
+.cafe-descripcion span{
+  color: #532c00;
+  font-weight: bold;
+}
+.container-detalle{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.container-detalle h4{
+  font-size: 18px;
+  
+
+  background-color: #532c00;
+  text-align: center;
+  border-radius: 15px 0px;
+  padding: 5px;
+}
+
+/*IMG MODAL SWIPER*/
+.modalProductSwiper {
+  width: 370px;
+  height: 370px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px #532c00c2;
+}
+
+.modalProductSwiper .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.img-modal {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+/* Flechas simples del modal */
+.modal-product-prev,
+.modal-product-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+
+  width: 34px;
+  height: 34px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: rgba(235, 221, 196, 0.9);
+  color: #532c00;
+
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.modal-product-prev {
+  left: 10px;
+}
+
+.modal-product-next {
+  right: 10px;
+}
+
+.modal-product-prev:hover,
+.modal-product-next:hover {
+  background-color: #f6cb2e;
+  color: #150d00;
+}

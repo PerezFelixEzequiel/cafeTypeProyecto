@@ -157,6 +157,7 @@
       </div>
     </header>
     <main>
+      <!--BANNER de Productos y promociones-->
       <div class="container-inf">
         <section class="banner">
           <div class="swiper bannerSwiper">
@@ -701,11 +702,46 @@
     <div id="modal" class="modal">
       <div class="modal-content">
         <span id="close-modal-btn" class="close">&times;</span>
+        <div class="swiper modalProductSwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img
+        class="img-modal"
+        src="./assets/cards-modal/cafe-brasil-torsoo.png"
+        alt="Café Brasil frente"
+      />
+    </div>
+
+    <div class="swiper-slide">
+      <img
+        class="img-modal"
+        src="./assets/cards-modal/cafe-brasil-dorsoo.png"
+        alt="Café Brasil dorso"
+      />
+    </div>
+  </div>
+
+  <button class="modal-product-prev" type="button">‹</button>
+  <button class="modal-product-next" type="button">›</button>
+</div>
+        <div class="container-precio">
+        <h3 class="cafe-titulo-modal">Brasil selvatico - 1kg</h3>
+        <p class="cafe-precio-modal">$ 30.000</p>
+        </div>
+        <div class="container-descripcion">
+          <p class="cafe-descripcion"><span>origen:</span> Brasil</p>
+          <p class="cafe-descripcion"><span>Tostado: </span>intenso</p>  
+          <p class="cafe-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit veniam reiciendis quo repudiandae sapiente nam nihil, dolores maxime enim nostrum itaque nisi accusamus molestiae quos minus placeat dolore facere.</p>
+        </div>
+        <div class="container-detalle">
+          <h4>Perfil de Sabores</h4>
+        </div>
         </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./JS/swiper-banner.js"></script>
+    <script src="./JS/swiper-modal.js"></script>
     <script src="./JS/card-modal.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
