@@ -47,7 +47,8 @@
 }
 
 .modulo-1 .btn-descubrir{
-  background-color: #ebddc4;;
+  background-color: #a88f6e;
+  color: #150d00;
   border: none;
   display: flex;
   align-items: center;
@@ -58,19 +59,30 @@
   text-align: center;
   justify-content: center;
   cursor: pointer;
-   color: #000000;
+  transition: 0.3s ease;
 }
 
 .modulo-1 .btn-descubrir:hover{
-  background-color: #f6cb2e;
-  color: #fff;
-}
+ background-color: #f6cb2e;
+  color: #150d00;
+  box-shadow: 0 0 12px rgba(83, 44, 0, 0.35);}
+
 
 .modulo-1 .btn-descubrir span{
   font-size: 14px;
   font-weight: bolder;
   text-transform: uppercase;
-  color: #000000;
+  color: #ebddc4;
+}
+
+
+
+.icono-flecha{
+color: #ebddc4;
+}
+
+.icono-flecha:hover{
+color: #150d00;
 }
 
 .divider-cafe {
@@ -210,8 +222,10 @@ form .pregunta-cafe.pregunta-3{
   padding: 20px;
   box-sizing: border-box;
 
+  position: relative;
 }
- 
+
+
 
 .modulo-3 h3{
   color: #f6cb2e;

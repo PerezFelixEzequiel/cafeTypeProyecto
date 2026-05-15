@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="CSS/footer.css" />
     <link rel="stylesheet" href="CSS/explora.css" />
     <link rel="stylesheet" href="CSS/registrate.css" />
-    <link rel="stylesheet" href="CSS/modal-card.css">
+    <link rel="stylesheet" href="CSS/modal-card.css" />
     <!--<link rel="stylesheet" href="CSS/style.css" />-->
     <title>CAFETYPE</title>
   </head>
@@ -150,8 +150,8 @@
           <ul>
             <li><a href="#productos">Productos</a></li>
             <li><a href="#descubre-cafe">Tu cafe ideal</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <!--<li><a href="#">Tienda</a></li>-->
+            <li><a href="#explora-cafetype">Contacto</a></li>
+            <li><a href="./pages/tienda.html">Tienda</a></li>
           </ul>
         </nav>
       </div>
@@ -205,88 +205,148 @@
       </div>
       <!--Productos-->
       <section class="section-productos" id="productos">
-        <!--Cafe Brasil-->
+        <!-- Café Brasil -->
         <div class="cards-cafe brasil-selvatico">
           <div class="container-img-card">
             <img
               src="./assets/cards/cafe-brasil.png"
-              alt="cafe brasil selvatico"
+              alt="Café Brasil Selvático"
               class="img-card-cafe"
             />
 
-            <button class="btn-action-modal open-modal-btn">Ver mas</button>
+            <button class="btn-action-modal open-modal-btn" type="button">
+              Ver más
+            </button>
           </div>
 
           <div class="container-descripcion-card">
-            <p class="descripcion-card">
-              Café intenso y envolvente con notas cálidas y perfil con carácter.
-              Rico con personalidad, tostado que envidian.
-            </p>
+            <span class="producto-categoria">Café de especialidad</span>
+
+            <h3 class="producto-nombre">Brasil Selvático</h3>
+
+            <p class="producto-formato">Cerrado Mineiro · 1kg</p>
+
+            <div class="producto-tags">
+              <span>Intenso</span>
+              <span>Brasil</span>
+              <span>Arábica</span>
+            </div>
+
+            <div class="producto-precio-box">
+              <p class="producto-precio">$30.000</p>
+              <p class="producto-cuotas">3 x $10.000 sin interés</p>
+            </div>
           </div>
-          <button class="btn-card">Comprar</button>
+
+          <button class="btn-card" type="button">Comprar</button>
         </div>
 
-        <!--Cafe Colombia-->
-        <div class="cards-cafe brasil-selvatico">
+        <!-- Café Colombia -->
+        <div class="cards-cafe colombia-supremo">
           <div class="container-img-card">
             <img
               src="./assets/cards/cafe-colombia.png"
-              alt="cafe brasil selvatico"
+              alt="Café Colombia Supremo"
               class="img-card-cafe"
             />
 
-            <button class="btn-action-modal open-modal-btn">Ver mas</button>
+            <button class="btn-action-modal open-modal-btn" type="button">
+              Ver más
+            </button>
           </div>
 
           <div class="container-descripcion-card">
-            <p class="descripcion-card">
-              Café intenso y envolvente con notas cálidas y perfil con carácter.
-              Rico con personalidad, tostado que envidian.
-            </p>
+            <span class="producto-categoria">Café de especialidad</span>
+
+            <h3 class="producto-nombre">Colombia Supremo</h3>
+
+            <p class="producto-formato">Huila Alta · 1kg</p>
+
+            <div class="producto-tags">
+              <span>neutro</span>
+              <span>Colombia</span>
+              <span>Caramelo</span>
+            </div>
+
+            <div class="producto-precio-box">
+              <p class="producto-precio">$32.000</p>
+              <p class="producto-cuotas">3 x $10.667 sin interés</p>
+            </div>
           </div>
-          <button class="btn-card">Comprar</button>
+
+          <button class="btn-card" type="button">Comprar</button>
         </div>
 
-        <!--Cafe España-->
-        <div class="cards-cafe brasil-selvatico">
+        <!-- Café España -->
+        <div class="cards-cafe espana-reserva">
           <div class="container-img-card">
             <img
               src="./assets/cards/cafe-espana.png"
-              alt="cafe brasil selvatico"
+              alt="Café España Madrid Reserva"
               class="img-card-cafe"
             />
 
-            <button class="btn-action-modal open-modal-btn">Ver mas</button>
+            <button class="btn-action-modal open-modal-btn" type="button">
+              Ver más
+            </button>
           </div>
 
           <div class="container-descripcion-card">
-            <p class="descripcion-card">
-              Café intenso y envolvente con notas cálidas y perfil con carácter.
-              Rico con personalidad, tostado que envidian.
-            </p>
+            <span class="producto-categoria">Café de especialidad</span>
+
+            <h3 class="producto-nombre">España Reserva</h3>
+
+            <p class="producto-formato">Madrid Reserva · 1kg</p>
+
+            <div class="producto-tags">
+              <span>Medio</span>
+              <span>España</span>
+              <span>Nuez</span>
+            </div>
+
+            <div class="producto-precio-box">
+              <p class="producto-precio">$31.500</p>
+              <p class="producto-cuotas">3 x $10.500 sin interés</p>
+            </div>
           </div>
-          <button class="btn-card">Comprar</button>
+
+          <button class="btn-card" type="button">Comprar</button>
         </div>
 
-        <!--Cafe Francia-->
-        <div class="cards-cafe brasil-selvatico">
+        <!-- Café Francia -->
+        <div class="cards-cafe francia-elegant">
           <div class="container-img-card">
             <img
               src="./assets/cards/cafe-francia.png"
-              alt="cafe brasil selvatico"
+              alt="Café Francia Paris Elegant"
               class="img-card-cafe"
             />
 
-            <button class="btn-action-modal open-modal-btn">Ver mas</button>
+            <button class="btn-action-modal open-modal-btn" type="button">
+              Ver más
+            </button>
           </div>
 
           <div class="container-descripcion-card">
-            <p class="descripcion-card">
-              Café intenso y envolvente con notas cálidas y perfil con carácter.
-              Rico con personalidad, tostado que envidian.
-            </p>
+            <span class="producto-categoria">Café de especialidad</span>
+
+            <h3 class="producto-nombre">Francia Elegant</h3>
+
+            <p class="producto-formato">Paris Elegant · 1kg</p>
+
+            <div class="producto-tags">
+              <span>Suave</span>
+              <span>Francia</span>
+              <span>Chocolate</span>
+            </div>
+
+            <div class="producto-precio-box">
+              <p class="producto-precio">$33.000</p>
+              <p class="producto-cuotas">3 x $11.000 sin interés</p>
+            </div>
           </div>
-          <button class="btn-card">Comprar</button>
+
+          <button class="btn-card" type="button">Comprar</button>
         </div>
       </section>
       <!--Descubre tu cafe-->
@@ -659,7 +719,7 @@
             <p>
               Regístrate para recibir información, noticias, concursos y
               nuestras promociones. Jamás compartiremos tu correo electrónico
-              con terceros y no enviamos spam. ¡Te lo prometemos! 
+              con terceros y no enviamos spam. ¡Te lo prometemos!
             </p>
           </div>
           <lottie-player
@@ -700,42 +760,96 @@
     </footer>
     <!--modal global -->
     <div id="modal" class="modal">
+      <button id="close-modal-btn" class="close" type="button">&times;</button>
+
       <div class="modal-content">
-        <span id="close-modal-btn" class="close">&times;</span>
         <div class="swiper modalProductSwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <img
-        class="img-modal"
-        src="./assets/cards-modal/cafe-brasil-torsoo.png"
-        alt="Café Brasil frente"
-      />
-    </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="img-modal"
+                src="./assets/cards-modal/cafe-brasil-torsoo.png"
+                alt="Café Brasil frente"
+              />
+            </div>
 
-    <div class="swiper-slide">
-      <img
-        class="img-modal"
-        src="./assets/cards-modal/cafe-brasil-dorsoo.png"
-        alt="Café Brasil dorso"
-      />
-    </div>
-  </div>
+            <div class="swiper-slide">
+              <img
+                class="img-modal"
+                src="./assets/cards-modal/cafe-brasil-dorsoo.png"
+                alt="Café Brasil dorso"
+              />
+            </div>
+          </div>
 
-  <button class="modal-product-prev" type="button">‹</button>
-  <button class="modal-product-next" type="button">›</button>
-</div>
+          <button class="modal-product-prev" type="button">‹</button>
+          <button class="modal-product-next" type="button">›</button>
+        </div>
+
+        <!-- resto del contenido del modal -->
         <div class="container-precio">
-        <h3 class="cafe-titulo-modal">Brasil selvatico - 1kg</h3>
-        <p class="cafe-precio-modal">$ 30.000</p>
+          <h3 class="cafe-titulo-modal">Brasil selvatico - 1kg</h3>
+          <p class="cafe-precio-modal">$ 30.000</p>
         </div>
         <div class="container-descripcion">
-          <p class="cafe-descripcion"><span>origen:</span> Brasil</p>
-          <p class="cafe-descripcion"><span>Tostado: </span>intenso</p>  
-          <p class="cafe-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit veniam reiciendis quo repudiandae sapiente nam nihil, dolores maxime enim nostrum itaque nisi accusamus molestiae quos minus placeat dolore facere.</p>
+          <div class="container-origen">
+            <p class="cafe-descripcion"><span>origen:</span> Brasil</p>
+            <p class="cafe-descripcion"><span>Tostado: </span>intenso</p>
+          </div>
+          <p class="cafe-descripcion">
+            Café de carácter intenso y aroma envolvente, inspirado en la fuerza
+            natural de Brasil. Su tostado profundo resalta notas cálidas, cuerpo
+            marcado y un final persistente, ideal para quienes disfrutan una
+            taza con personalidad, equilibrio y sabor bien definido.
+          </p>
         </div>
         <div class="container-detalle">
           <h4>Perfil de Sabores</h4>
-        </div>
+
+          <div class="perfil-sabores">
+            <div class="sabor-row">
+              <span class="sabor-label">Amargor:</span>
+              <div class="sabor-granos">
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+              </div>
+            </div>
+
+            <div class="sabor-row">
+              <span class="sabor-label">Acidez:</span>
+              <div class="sabor-granos">
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+              </div>
+            </div>
+
+            <div class="sabor-row">
+              <span class="sabor-label">Cuerpo:</span>
+              <div class="sabor-granos">
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+              </div>
+            </div>
+
+            <div class="sabor-row">
+              <span class="sabor-label">Dulzor:</span>
+              <div class="sabor-granos">
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+                <span class="grano-svg"></span>
+              </div>
+            </div>
+            <a href="#productos" class="btn-modal-tienda"> Comprar </a>
+          </div>
         </div>
       </div>
     </div>

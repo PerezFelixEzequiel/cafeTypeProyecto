@@ -1,28 +1,51 @@
 /*MODAL CARD*/
-.modal{
+.modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
+
   width: 100%;
-  height: 100%;
+  height: 100vh;
+
   background-color: rgba(0, 0, 0, 0.5);
-  justify-content: right;
-  align-items: center;
+
+  justify-content: flex-end;
+  align-items: stretch;
+
   z-index: 100;
+  overflow: hidden;
 }
 
 /*ESTILOS MODAL CARD*/
 
-.close{
-  position: absolute;
-color: #ebddc4;
-font-size: 50px;
-font-weight: bold;
-top: -10px;
-left: -50px;
-cursor: pointer;
-transition: all .5s ease;
+.close {
+  position: fixed;
+  top: 18px;
+  right: 440px;
+  z-index: 200;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background-color: transparent;
+
+  color: #ebddc4;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close:hover {
+  color: #f6cb2e;
+  transform: scale(1.15);
 }
 
 .close:hover{
@@ -30,18 +53,46 @@ transition: all .5s ease;
   transform: scale(1.2);
 }
 
-.modal-content{
+.modal-content {
   width: 100%;
   max-width: 420px;
-  height: 100%;
+  height: 100vh;
+  max-height: 100vh;
+
   display: flex;
   flex-direction: column;
-  padding: 20px ;
+
+  padding: 20px;
   gap: 10px;
+
   background-color: #ebddc4;
   box-shadow: 0 0 10px 5px #0000003d;
   position: relative;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  box-sizing: border-box;
+  overscroll-behavior: contain;
 }
+
+.modal-content > * {
+  flex-shrink: 0;
+}
+
+/* SCROOL LATERAL*/
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #532c0052;
+  border-radius: 20px;
+}
+
+
 
 .img-modal{
   width: 370px;
@@ -60,6 +111,12 @@ transition: all .5s ease;
 .cafe-precio-modal{
   color: #532c00c7;
   font-size: 25px;
+}
+
+.container-descripcion{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .cafe-descripcion{
@@ -85,10 +142,79 @@ transition: all .5s ease;
   padding: 5px;
 }
 
+/* PERFIL DE SABORES */
+
+.container-detalle {
+  width: 100%;
+  
+  overflow: hidden;
+  
+  
+}
+
+.container-detalle h4 {
+  font-size: 18px;
+  color: #ebddc4;
+  background-color: #532c00;
+  text-align: center;
+  border-radius: 15px 0px;
+  padding: 7px;
+  margin: 0;
+}
+
+.perfil-sabores {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 14px;
+}
+
+.sabor-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sabor-label {
+  width: 85px;
+  color: #532c00;
+  font-size: 0.85rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sabor-granos {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* Grano usando tu SVG */
+.grano-svg {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+
+  background-color: #532c00;
+
+  mask-image: url("../assets/cards-modal/coffee-bean.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  -webkit-mask-image: url("../assets/cards-modal/coffee-bean.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
 /*IMG MODAL SWIPER*/
 .modalProductSwiper {
   width: 370px;
   height: 370px;
+  min-height: 370px;
+
+  flex: 0 0 370px;
+
   position: relative;
   border-radius: 8px;
   overflow: hidden;
@@ -108,6 +234,39 @@ transition: all .5s ease;
 
   border-radius: 8px;
   box-shadow: none;
+}
+
+.btn-modal-tienda {
+  width: 100%;
+  padding: 13px 18px;
+  margin-top: 40px;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #532c0070;
+  color: #ebddc4;
+
+  border: none;
+  border-radius: 12px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
+
+.btn-modal-tienda:hover {
+  background-color: #f6cb2e;
+  color: #150d00;
+  box-shadow: 0 0 12px rgba(83, 44, 0, 0.35);
 }
 
 /* Flechas simples del modal */
