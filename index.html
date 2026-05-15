@@ -214,7 +214,11 @@
               class="img-card-cafe"
             />
 
-            <button class="btn-action-modal open-modal-btn" type="button">
+            <button
+              class="btn-action-modal open-modal-btn"
+              data-product-id="brasil-selvatico"
+              type="button"
+            >
               Ver más
             </button>
           </div>
@@ -250,7 +254,11 @@
               class="img-card-cafe"
             />
 
-            <button class="btn-action-modal open-modal-btn" type="button">
+            <button
+              class="btn-action-modal open-modal-btn"
+              data-product-id="colombia-supremo"
+              type="button"
+            >
               Ver más
             </button>
           </div>
@@ -286,7 +294,11 @@
               class="img-card-cafe"
             />
 
-            <button class="btn-action-modal open-modal-btn" type="button">
+            <button
+              class="btn-action-modal open-modal-btn"
+              data-product-id="espana-reserva"
+              type="button"
+            >
               Ver más
             </button>
           </div>
@@ -322,7 +334,11 @@
               class="img-card-cafe"
             />
 
-            <button class="btn-action-modal open-modal-btn" type="button">
+            <button
+              class="btn-action-modal open-modal-btn"
+              data-product-id="francia-elegant"
+              type="button"
+            >
               Ver más
             </button>
           </div>
@@ -767,6 +783,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img
+                id="modal-img-frente"
                 class="img-modal"
                 src="./assets/cards-modal/cafe-brasil-torsoo.png"
                 alt="Café Brasil frente"
@@ -775,6 +792,7 @@
 
             <div class="swiper-slide">
               <img
+                id="modal-img-dorso"
                 class="img-modal"
                 src="./assets/cards-modal/cafe-brasil-dorsoo.png"
                 alt="Café Brasil dorso"
@@ -788,19 +806,29 @@
 
         <!-- resto del contenido del modal -->
         <div class="container-precio">
-          <h3 class="cafe-titulo-modal">Brasil selvatico - 1kg</h3>
-          <p class="cafe-precio-modal">$ 30.000</p>
+          <h3 id="modal-nombre" 
+          class="cafe-titulo-modal">Brasil Selvático</h3>
+
+          <p id="modal-precio" 
+          class="cafe-precio-modal">$30.000</p>
         </div>
+
         <div class="container-descripcion">
           <div class="container-origen">
-            <p class="cafe-descripcion"><span>origen:</span> Brasil</p>
-            <p class="cafe-descripcion"><span>Tostado: </span>intenso</p>
+            <p class="cafe-descripcion">
+              <span>Origen:</span>
+              <span id="modal-origen">Brasil</span>
+            </p>
+
+            <p class="cafe-descripcion">
+              <span>Tueste:</span>
+              <span id="modal-tueste">Medio-oscuro</span>
+            </p>
           </div>
-          <p class="cafe-descripcion">
+
+          <p id="modal-descripcion" class="cafe-descripcion">
             Café de carácter intenso y aroma envolvente, inspirado en la fuerza
-            natural de Brasil. Su tostado profundo resalta notas cálidas, cuerpo
-            marcado y un final persistente, ideal para quienes disfrutan una
-            taza con personalidad, equilibrio y sabor bien definido.
+            natural de Brasil.
           </p>
         </div>
         <div class="container-detalle">
@@ -856,6 +884,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./JS/swiper-banner.js"></script>
     <script src="./JS/swiper-modal.js"></script>
+    <script src="./JS/productos-data.js"></script>
     <script src="./JS/card-modal.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
