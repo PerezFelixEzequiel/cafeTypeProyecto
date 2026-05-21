@@ -1,25 +1,24 @@
-.container-inf .container-descubre-cafe{
+/* // Contenedor general */
+.container-inf .container-descubre-cafe {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
+  gap: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+
   background-color: rgba(0, 0, 0, 0.26);
   border-radius: 25px;
-  padding: 20px;
-  gap: 16px;
-  box-sizing: border-box;
 }
 
-/* Módulo 1: Introducción */
+/* // Módulo 1 - Introducción */
 .modulo-1 {
   flex: 0 0 280px;
   width: 280px;
-   align-self: stretch;
-
-  border-right: solid 1px #f6cb2e;
-  margin: 0;
+  align-self: stretch;
 
   display: flex;
   flex-direction: column;
@@ -28,63 +27,29 @@
 
   gap: 20px;
   padding: 0 20px;
+  margin: 0;
   box-sizing: border-box;
+
   text-align: center;
+  border-right: solid 1px #f6cb2e;
 }
 
-.modulo-1 h2{
+.modulo-1 h2 {
   margin: 0;
   padding: 0;
+
   color: #f6cb2e;
-  text-transform: uppercase;
   font-size: 40px;
   font-weight: 100;
-}
-
-.modulo-1 p{
-  font-weight: 100;
-  text-shadow: 0px 0px 5px #f6cb2e;
-}
-
-.modulo-1 .btn-descubrir{
-  background-color: #a88f6e;
-  color: #150d00;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  width: 95%;
-  text-align: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.modulo-1 .btn-descubrir:hover{
- background-color: #f6cb2e;
-  color: #150d00;
-  box-shadow: 0 0 12px rgba(83, 44, 0, 0.35);}
-
-
-.modulo-1 .btn-descubrir span{
-  font-size: 14px;
-  font-weight: bolder;
   text-transform: uppercase;
-  color: #ebddc4;
 }
 
-
-
-.icono-flecha{
-color: #ebddc4;
+.modulo-1 p {
+  font-weight: 100;
+  text-shadow: 0 0 5px #f6cb2e;
 }
 
-.icono-flecha:hover{
-color: #150d00;
-}
-
+/* // Divider */
 .divider-cafe {
   width: 100%;
   max-width: 250px;
@@ -108,62 +73,114 @@ color: #150d00;
   display: block;
 }
 
-/* Módulo 2: Test */
-.container-descubre-cafe form{
+/* // Botón descubrir */
+.modulo-1 .btn-descubrir {
+  width: 95%;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background-color: #ebddc4;
+  color: #532c00;
+
+  border: none;
+  border-radius: 10px;
+
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.modulo-1 .btn-descubrir span {
+  color: #150d00;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.modulo-1 .btn-descubrir .icono-flecha {
+  color: #150d00;
+}
+
+.modulo-1 .btn-descubrir:hover {
+  background-color: #f6cb2e;
+  color: #150d00;
+  box-shadow: 0 0 12px rgba(246, 203, 46, 0.45);
+}
+
+/* // Animación del botón principal */
+.descubre-cafe:not(.activo) .btn-descubrir {
+  animation: btnCafeLlamado 2s ease-in-out infinite;
+}
+
+.descubre-cafe:not(.activo) .btn-descubrir:hover {
+  animation-play-state: paused;
+}
+
+.descubre-cafe.activo .btn-descubrir {
+  animation: none;
+}
+
+/* // Módulo 2 - Test */
+.modulo-2 {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.container-descubre-cafe form .pregunta-cafe{
+.modulo-2 .pregunta-cafe {
+  min-width: 170px;
+  padding: 20px;
+
   display: flex;
   flex-direction: column;
   gap: 14px;
 
   border: none;
-  border-right:solid 1px #f6cb2e;
-
-  padding: 20px;
-  min-width: 170px;
+  border-right: solid 1px #f6cb2e;
 }
 
-.pregunta-cafe legend{
+.pregunta-cafe.pregunta-3 {
+  border-right: none;
+}
+
+.pregunta-cafe legend {
   font-weight: 100;
 }
 
-
-
-.pregunta-cafe .span-pregunta{
-color: #f6cb2e;
+.pregunta-cafe .span-pregunta {
+  color: #f6cb2e;
 }
 
-/* LABEL GENERAL */
+/* // Opciones del test */
 .pregunta-cafe .opcion-cafe {
   width: 130px;
   cursor: pointer;
 }
 
-/* OCULTAMOS EL RADIO REAL */
 .pregunta-cafe .opcion-cafe input {
   display: none;
 }
 
-/* BOTON VISUAL */
 .pregunta-cafe .opcion-cafe span {
   width: 100%;
   min-height: 36px;
   padding: 8px 14px;
+  box-sizing: border-box;
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
 
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 10px;
-
   background-color: transparent;
   color: #ebddc4;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
 
   font-size: 13px;
   font-weight: 500;
@@ -172,20 +189,18 @@ color: #f6cb2e;
   transition: 0.25s ease;
 }
 
-/* ICONOS DENTRO DE LOS BOTONES */
 .pregunta-cafe .opcion-cafe span img {
   width: 30px;
   height: 30px;
   object-fit: contain;
 }
 
-/* HOVER */
 .pregunta-cafe .opcion-cafe:hover span {
   border-color: #f6cb2e;
   color: #f6cb2e;
 }
 
-/* OPCION SELECCIONADA */
+/* // Opción seleccionada */
 .pregunta-cafe .opcion-cafe input:checked + span {
   background-color: #f6cb2e;
   border-color: #f6cb2e;
@@ -194,66 +209,115 @@ color: #f6cb2e;
   box-shadow: 0 0 12px rgba(246, 203, 46, 0.25);
 }
 
-/* Cuando la opción está seleccionada, el SVG se vuelve negro */
 .pregunta-cafe .opcion-cafe input:checked + span img {
   filter: brightness(0);
   opacity: 1;
 }
 
-
-
-form .pregunta-cafe.pregunta-3{
-  border-right: none;
-}
-
-/* Módulo 3: Resultado */
-.modulo-3{
- flex: 0 0 260px;
-  align-self: stretch;
+/* // Módulo 3 - Resultado */
+.modulo-3 {
+  flex: 0 0 260px;
   width: 260px;
+  align-self: stretch;
 
   display: flex;
   flex-direction: column;
-   justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
 
-  border: solid 2px #f6cb2e;
-  border-radius: 15px;
   padding: 20px;
   box-sizing: border-box;
 
-  position: relative;
+  border: solid 2px #f6cb2e;
+  border-radius: 15px;
 }
 
-
-
-.modulo-3 h3{
+.modulo-3 h3 {
   color: #f6cb2e;
   text-transform: uppercase;
 }
 
-
-.modulo-3 .match-img{
+.modulo-3 .match-img {
   width: 120px;
 }
 
-.modulo-3 .btn-ver-cafe{
-  background-color: #ebddc4;;
-  border: none;
+.modulo-3 .btn-ver-cafe {
+  width: 95%;
+  padding: 10px;
+
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  width: 95%;
-  text-align: center;
   justify-content: center;
-  cursor: pointer;
+  gap: 10px;
+
+  background-color: #ebddc4;
   color: #532c00;
+
+  border: none;
+  border-radius: 10px;
+
+  text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
-.modulo-3 .btn-ver-cafe:hover{
+.modulo-3 .btn-ver-cafe:hover {
   background-color: #f6cb2e;
-  color: #fff;
+  color: #ffffff;
+}
+
+/* // Estados del cuestionario */
+.modulo-2,
+.modulo-3 {
+  opacity: 0.4;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+.modulo-2::after,
+.modulo-3::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  cursor: not-allowed;
+}
+
+.descubre-cafe.activo .modulo-2,
+.descubre-cafe.activo .modulo-3 {
+  opacity: 1;
+}
+
+.descubre-cafe.activo .modulo-2::after,
+.descubre-cafe.activo .modulo-3::after {
+  display: none;
+}
+
+/* // Movimiento del botón */
+@keyframes btnCafeLlamado {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 10px rgba(246, 203, 46, 0.35);
+  }
+
+  30% {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 0 22px rgba(246, 203, 46, 0.75);
+  }
+
+  50% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 14px rgba(246, 203, 46, 0.45);
+  }
+
+  70% {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 0 18px rgba(246, 203, 46, 0.6);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 10px rgba(246, 203, 46, 0.35);
+  }
 }

@@ -14,7 +14,10 @@ const productosCafe = {
     descripcionLarga:
       "Brasil Selvático es un café de perfil robusto y reconfortante, pensado para quienes disfrutan una taza intensa, con cuerpo marcado y baja acidez. Su tueste medio-oscuro resalta notas a chocolate, nuez y caramelo, logrando una experiencia profunda y redonda. Ideal para preparaciones que destaquen su carácter y densidad en boca.",
     precio: "$30.000",
-    
+    imagen: {
+      frente:"./assets/cards-modal/cafe-brasil-frente.png",
+      dorso:"./assets/cards-modal/cafe-brasil-dorso.png",
+    }
   },
 
   "colombia-supremo": {
@@ -32,7 +35,10 @@ const productosCafe = {
     descripcionLarga:
       "Colombia Supremo ofrece un perfil elegante y equilibrado, con una acidez brillante pero agradable, cuerpo medio y un final limpio. Su tueste medio permite expresar mejor sus matices, combinando notas de frutos rojos, cacao y panela. Es una gran opción para quienes buscan complejidad sin perder balance.",
     precio: "$32.000",
-    
+    imagen: {
+      frente:"./assets/cards-modal/cafe-colombia-frente.png",
+      dorso:"./assets/cards-modal/cafe-colombia-dorso.png",
+    }
   },
 
   "espana-reserva": {
@@ -50,7 +56,10 @@ const productosCafe = {
     descripcionLarga:
       "España Reserva está pensado como un café de personalidad marcada, con tueste oscuro, baja acidez y sabor profundo. Su perfil se apoya en notas de cacao amargo, especias y caramelo tostado, dando como resultado una taza intensa, clásica y de gran presencia. Ideal para quienes prefieren cafés potentes y de impronta más tradicional.",
     precio: "$31.500",
-    
+    imagen: {
+      frente:"./assets/cards-modal/cafe-espana-frente.png",
+      dorso:"./assets/cards-modal/cafe-espana-dorso.png",
+    }
   },
 
   "francia-elegant": {
@@ -68,6 +77,9 @@ const productosCafe = {
     descripcionLarga:
       "Francia Elegant propone una experiencia más sutil y sofisticada, con intensidad media, cuerpo equilibrado y una taza suave pero expresiva. Su tueste medio-claro permite conservar un perfil aromático delicado, donde aparecen notas de almendra, vainilla y cacao suave. Es ideal para quienes valoran la fineza, el aroma y una sensación más ligera en boca.",
     precio: "$33.000",
-    
+    imagen: {
+      frente:"./assets/cards-modal/cafe-francia-frente.png",
+      dorso:"./assets/cards-modal/cafe-francia-dorso.png",
+    }
   }
 };

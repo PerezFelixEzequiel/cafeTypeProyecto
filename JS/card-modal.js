@@ -9,6 +9,8 @@ const modalPrecio = document.getElementById("modal-precio");
 const modalOrigen = document.getElementById("modal-origen");
 const modalTueste = document.getElementById("modal-tueste");
 const modalDescripcion = document.getElementById("modal-descripcion");
+const modalImgFrente = document.getElementById("modal-img-frente");
+const modalImgDorso = document.getElementById("modal-img-dorso");
 
 // Abrir modal
 openModalBtn.forEach(function (btn) {
@@ -31,6 +33,11 @@ openModalBtn.forEach(function (btn) {
     modalOrigen.textContent = productoSeleccionado.origen;
     modalTueste.textContent = productoSeleccionado.tueste;
     modalDescripcion.textContent = productoSeleccionado.descripcionLarga;
+    modalImgFrente.src = productoSeleccionado.imagen.frente;
+    modalImgFrente.alt = productoSeleccionado.nombre + " frente";
+
+    modalImgDorso.src = productoSeleccionado.imagen.dorso;
+    modalImgDorso.alt = productoSeleccionado.nombre + " dorso";
 
     modal.style.display = "flex";
   });
