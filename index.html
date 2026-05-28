@@ -504,22 +504,22 @@
 
                 <label class="opcion-cafe">
                   <input type="radio" name="notas" value="chocolate" />
-                  <span>Chocolate</span>
+                  <span>Frutal</span>
                 </label>
 
                 <label class="opcion-cafe">
                   <input type="radio" name="notas" value="frutales" checked />
-                  <span>Frutales</span>
+                  <span>Achocolatado</span>
                 </label>
 
                 <label class="opcion-cafe">
                   <input type="radio" name="notas" value="nuez" />
-                  <span>Nuez</span>
+                  <span>Tostado y Especiado</span>
                 </label>
 
                 <label class="opcion-cafe">
                   <input type="radio" name="notas" value="caramelo" />
-                  <span>Caramelo</span>
+                  <span>Dulce y Suave</span>
                 </label>
               </fieldset>
             </form>
@@ -530,7 +530,7 @@
               aria-live="polite"
               data-match-card
             >
-              <span class="match-label">Tu match:</span>
+              <span class="match-label">Tu café ideal</span>
 
               <h3 class="match-title" data-match-title>Colombia Supremo</h3>
 
@@ -541,7 +541,7 @@
                 data-match-img
               />
               <button
-                class="btn-ver-cafe"
+                class="btn-ver-cafe open-modal-btn"
                 type="button"
                 data-action="view-product"
                 data-product-id="colombia-supremo"
@@ -806,11 +806,9 @@
 
         <!-- resto del contenido del modal -->
         <div class="container-precio">
-          <h3 id="modal-nombre" 
-          class="cafe-titulo-modal">Brasil Selvático</h3>
+          <h3 id="modal-nombre" class="cafe-titulo-modal">Brasil Selvático</h3>
 
-          <p id="modal-precio" 
-          class="cafe-precio-modal">$30.000</p>
+          <p id="modal-precio" class="cafe-precio-modal">$30.000</p>
         </div>
 
         <div class="container-descripcion">
@@ -887,6 +885,7 @@
     <script src="./JS/productos-data.js"></script>
     <script src="./JS/card-modal.js"></script>
     <script src="./JS/descubre-cafe.js"></script>
+    <script src="./JS/match-cafe.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

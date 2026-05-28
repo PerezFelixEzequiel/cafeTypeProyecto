@@ -129,6 +129,7 @@
   display: flex;
   margin: 0;
   padding: 0;
+
 }
 
 .modulo-2 .pregunta-cafe {
@@ -225,26 +226,92 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  isolation: isolate;
 
   padding: 20px;
   box-sizing: border-box;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at 80% 45%, rgba(246, 203, 46, 0.32), transparent 38%),
+    linear-gradient(180deg, rgba(83, 44, 0, 0.38), rgba(0, 0, 0, 0.35));
 
   border: solid 2px #f6cb2e;
-  border-radius: 15px;
+  border-radius: 18px;
+
+  box-shadow:
+    0 0 18px rgba(246, 203, 46, 0.18),
+    inset 0 0 18px rgba(246, 203, 46, 0.08);
+
+  text-align: center;
 }
 
-.modulo-3 h3 {
+/* // Brillo decorativo detrás del café */
+.modulo-3::before {
+  content: "";
+  position: absolute;
+
+  width: 190px;
+  height: 190px;
+  right: -55px;
+  bottom: 70px;
+
+  background: radial-gradient(
+    circle,
+    rgba(246, 203, 46, 0.45) 0%,
+    rgba(246, 203, 46, 0.18) 38%,
+    transparent 70%
+  );
+
+  filter: blur(10px);
+  z-index: -1;
+}
+
+/* // Etiqueta superior */
+.modulo-3 .match-label {
+  padding: 5px 12px;
+
+  background-color: rgba(246, 203, 46, 0.16);
   color: #f6cb2e;
+
+  border: 1px solid rgba(246, 203, 46, 0.45);
+  border-radius: 999px;
+
+  font-size: 0.72rem;
+  font-weight: 900;
   text-transform: uppercase;
+  letter-spacing: 0.6px;
 }
 
+/* // Título del café recomendado */
+.modulo-3 h3,
+.modulo-3 .match-title {
+  margin: 8px 0 0;
+
+  color: #f6cb2e;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  text-shadow: 0 0 10px rgba(246, 203, 46, 0.35);
+}
+
+/* // Imagen del café recomendado */
 .modulo-3 .match-img {
-  width: 120px;
+  width: 140px;
+  height: auto;
+
+  object-fit: contain;
+  filter: drop-shadow(0 12px 14px rgba(0, 0, 0, 0.45));
+
+  animation: cafeMatchFlotante 3s ease-in-out infinite;
 }
 
+/* // Botón ver café */
 .modulo-3 .btn-ver-cafe {
   width: 95%;
-  padding: 10px;
+  padding: 11px 12px;
 
   display: flex;
   align-items: center;
@@ -255,16 +322,52 @@
   color: #532c00;
 
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
 
   text-align: center;
   text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 900;
+
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .modulo-3 .btn-ver-cafe:hover {
   background-color: #f6cb2e;
-  color: #ffffff;
+  color: #150d00;
+  box-shadow: 0 0 14px rgba(246, 203, 46, 0.45);
+  transform: translateY(-2px);
+}
+
+/* // Cuando el test está activo, el match aparece con más presencia */
+.descubre-cafe.activo .modulo-3 {
+  animation: aparecerMatch 0.45s ease both;
+}
+
+/* // Animaciones */
+@keyframes cafeMatchFlotante {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-6px) scale(1.03);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes aparecerMatch {
+  from {
+    transform: translateY(10px) scale(0.96);
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+  }
 }
 
 /* // Estados del cuestionario */
