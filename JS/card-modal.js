@@ -12,6 +12,31 @@ const modalDescripcion = document.getElementById("modal-descripcion");
 const modalImgFrente = document.getElementById("modal-img-frente");
 const modalImgDorso = document.getElementById("modal-img-dorso");
 
+function cargarPerfilSabores(perfilSabores) {
+  const sabores = ["intensidad", "acidez", "cuerpo", "dulzor"];
+
+  sabores.forEach(function (sabor) {
+    const contenedor = document.querySelector(`[data-sabor="${sabor}"]`);
+    const cantidad = perfilSabores[sabor];
+
+    contenedor.innerHTML = "";
+
+    for (let i = 1; i <= 5; i++) {
+      const grano = document.createElement("span");
+
+      grano.classList.add("grano-svg");
+
+      contenedor.appendChild(grano);
+
+      if (i <= cantidad) {
+        setTimeout(function () {
+          grano.classList.add("grano-activo");
+        }, i * 300);
+      }
+    }
+  });
+}
+
 // Abrir modal
 openModalBtn.forEach(function (btn) {
   btn.addEventListener("click", function () {
@@ -38,6 +63,8 @@ openModalBtn.forEach(function (btn) {
 
     modalImgDorso.src = productoSeleccionado.imagen.dorso;
     modalImgDorso.alt = productoSeleccionado.nombre + " dorso";
+
+    cargarPerfilSabores(productoSeleccionado.perfilSabores);
 
     modal.style.display = "flex";
   });

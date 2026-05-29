@@ -4,26 +4,66 @@ const matchTitle = document.querySelector("[data-match-title]");
 const matchImg = document.querySelector("[data-match-img]");
 const btnVerCafe = document.querySelector(".btn-ver-cafe");
 
-// Relación simple entre respuestas y cafés
+// Reglas de compatibilidad entre respuestas y cafés
 const matchPorRespuesta = {
   intensidad: {
-    suave: "francia-elegant",
-    equilibrado: "colombia-supremo",
-    intenso: "brasil-selvatico",
+    suave: [
+      { cafeId: "francia-elegant", puntos: 2 },
+      { cafeId: "colombia-supremo", puntos: 1 },
+    ],
+
+    equilibrado: [
+      { cafeId: "colombia-supremo", puntos: 2 },
+      { cafeId: "francia-elegant", puntos: 1 },
+    ],
+
+    intenso: [
+      { cafeId: "brasil-selvatico", puntos: 2 },
+      { cafeId: "espana-reserva", puntos: 2 },
+    ],
   },
 
   metodo: {
-    "prensa-francesa": "brasil-selvatico",
-    espresso: "brasil-selvatico",
-    filtro: "colombia-supremo",
-    moka: "espana-reserva",
+    "prensa-francesa": [
+      { cafeId: "brasil-selvatico", puntos: 1 },
+      { cafeId: "colombia-supremo", puntos: 1 },
+      { cafeId: "francia-elegant", puntos: 1 },
+    ],
+
+    espresso: [
+      { cafeId: "brasil-selvatico", puntos: 1 },
+      { cafeId: "espana-reserva", puntos: 1 },
+      { cafeId: "colombia-supremo", puntos: 1 },
+    ],
+
+    filtro: [
+      { cafeId: "colombia-supremo", puntos: 1 },
+      { cafeId: "francia-elegant", puntos: 1 },
+    ],
+
+    moka: [
+      { cafeId: "espana-reserva", puntos: 2 },
+      { cafeId: "brasil-selvatico", puntos: 1 },
+    ],
   },
 
   notas: {
-    chocolate: "brasil-selvatico",
-    frutales: "colombia-supremo",
-    nuez: "espana-reserva",
-    caramelo: "francia-elegant",
+    Frutal: [
+      { cafeId: "colombia-supremo", puntos: 3 },
+    ],
+
+    Achocolatado: [
+      { cafeId: "brasil-selvatico", puntos: 3 },
+      { cafeId: "espana-reserva", puntos: 1 },
+    ],
+
+    "Tostado y Especiado": [
+      { cafeId: "espana-reserva", puntos: 3 },
+    ],
+
+    "Dulce y Suave": [
+      { cafeId: "francia-elegant", puntos: 3 },
+    ],
   },
 };
 
@@ -40,7 +80,6 @@ function obtenerRespuestas() {
   };
 }
 
-// Calcula el café recomendado
 function calcularMatch() {
   const respuestas = obtenerRespuestas();
 
@@ -51,13 +90,20 @@ function calcularMatch() {
     "francia-elegant": 0,
   };
 
-  const cafePorIntensidad = matchPorRespuesta.intensidad[respuestas.intensidad];
-  const cafePorMetodo = matchPorRespuesta.metodo[respuestas.metodo];
-  const cafePorNotas = matchPorRespuesta.notas[respuestas.notas];
+  // Sumamos puntos por intensidad
+  matchPorRespuesta.intensidad[respuestas.intensidad].forEach(function (regla) {
+    puntajes[regla.cafeId] += regla.puntos;
+  });
 
-  puntajes[cafePorIntensidad]++;
-  puntajes[cafePorMetodo]++;
-  puntajes[cafePorNotas]++;
+  // Sumamos puntos por método
+  matchPorRespuesta.metodo[respuestas.metodo].forEach(function (regla) {
+    puntajes[regla.cafeId] += regla.puntos;
+  });
+
+  // Sumamos puntos por notas
+  matchPorRespuesta.notas[respuestas.notas].forEach(function (regla) {
+    puntajes[regla.cafeId] += regla.puntos;
+  });
 
   let cafeGanador = "colombia-supremo";
   let mayorPuntaje = 0;
@@ -68,6 +114,8 @@ function calcularMatch() {
       cafeGanador = cafeId;
     }
   }
+
+  console.log("Puntajes:", puntajes);
 
   return cafeGanador;
 }

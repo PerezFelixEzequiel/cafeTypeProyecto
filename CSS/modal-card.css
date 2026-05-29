@@ -185,8 +185,8 @@
 
 .sabor-granos {
   display: flex;
+  gap: 6px;
   align-items: center;
-  gap: 7px;
 }
 
 /* Grano usando tu SVG */
@@ -202,11 +202,24 @@
   mask-position: center;
   mask-size: contain;
 
-  -webkit-mask-image: url("../assets/cards-modal/coffee-bean.svg");
+  
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
   -webkit-mask-size: contain;
+  
+  
+  display: inline-block;
+
+  opacity: 0.25;
+  
+  position: relative;
+transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
+.grano-activo {
+  opacity: 1;
+}
+
 /*IMG MODAL SWIPER*/
 .modalProductSwiper {
   width: 370px;
