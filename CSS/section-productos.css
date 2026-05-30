@@ -227,6 +227,10 @@
 
 /* Botón Comprar */
 .btn-card {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   width: 100%;
   padding: 11px 14px;
   margin-top: auto;

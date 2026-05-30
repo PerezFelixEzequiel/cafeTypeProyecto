@@ -12,6 +12,8 @@ const modalDescripcion = document.getElementById("modal-descripcion");
 const modalImgFrente = document.getElementById("modal-img-frente");
 const modalImgDorso = document.getElementById("modal-img-dorso");
 
+//Perfil de Sabores en Modal
+
 function cargarPerfilSabores(perfilSabores) {
   const sabores = ["intensidad", "acidez", "cuerpo", "dulzor"];
 

@@ -15,7 +15,7 @@ const productosCafe = {
       "Café intenso y envolvente, con cuerpo alto y notas cálidas a chocolate y frutos secos.",
     descripcionLarga:
       "Brasil Selvático ofrece una taza intensa y envolvente, con cuerpo alto, baja acidez y un perfil claramente achocolatado. Su tueste medio-oscuro resalta notas de chocolate, nuez y caramelo, logrando una experiencia cálida, profunda y persistente. Es ideal para quienes buscan un café con carácter y una presencia marcada en boca.",
-    precio: "$30.000",
+    precio: "$15.000",
     imagenCard: "./assets/cards/cafe-brasil.png",
     imagen: {
       frente:"./assets/cards-modal/cafe-brasil-frente.png",
@@ -45,7 +45,7 @@ const productosCafe = {
       "Café equilibrado y vibrante, con acidez media-alta y notas frutales suaves.",
     descripcionLarga:
       "Colombia Supremo destaca por su perfil equilibrado y su carácter frutal, con una taza vibrante, limpia y de cuerpo medio. Su tueste medio permite expresar notas de frutos rojos, cacao y panela, manteniendo una acidez media-alta agradable y bien integrada. Es una gran opción para quienes buscan complejidad, frescura y balance en cada sorbo.",
-    precio: "$32.000",
+    precio: "$10.000",
     imagenCard: "./assets/cards/cafe-colombia.png",
     imagen: {
       frente:"./assets/cards-modal/cafe-colombia-frente.png",
@@ -75,7 +75,7 @@ const productosCafe = {
       "Café de perfil intenso y tostado, con carácter fuerte y final persistente.",
     descripcionLarga:
   "España Reserva presenta un perfil intenso, de tueste oscuro y marcada personalidad, ideal para quienes prefieren sabores profundos y expresivos. Su familia de sabor tostado y especiado se apoya en notas de cacao amargo, especias y caramelo tostado, con baja acidez y un final persistente. Es un café pensado para una experiencia potente, clásica y contundente.",
-    precio: "$31.500",
+    precio: "$12.500",
     imagenCard: "./assets/cards/cafe-espana.png",
     imagen: {
       frente:"./assets/cards-modal/cafe-espana-frente.png",
@@ -106,7 +106,7 @@ perfilSabores: {
       "Café delicado y refinado, con perfil suave, aromático y elegante.",
     descripcionLarga:
   "Francia Elegant propone una experiencia suave, delicada y refinada, con un perfil dulce y armonioso. Su tueste medio-claro conserva un carácter aromático sutil, donde aparecen notas de almendra, vainilla y cacao suave, acompañadas por un cuerpo medio y una sensación ligera en boca. Es ideal para quienes buscan una taza elegante, amable y fácil de disfrutar.",
-    precio: "$33.000",
+    precio: "$15.000",
      imagenCard: "./assets/cards/cafe-francia.png",
     imagen: {
       frente:"./assets/cards-modal/cafe-francia-frente.png",
