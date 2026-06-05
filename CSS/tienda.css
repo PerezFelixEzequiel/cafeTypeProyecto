@@ -1,0 +1,195 @@
+.tienda-productos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: start;
+}
+
+
+.tienda-layout {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.filtros-tienda {
+  background: linear-gradient(180deg, #18130d, #0f0c08);
+  border-radius: 10px;
+  padding: 18px;
+  align-self: start;
+}
+
+.filtros-titulo {
+  color: #f5e7c8;
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.filtro-grupo {
+  border: none;
+  padding: 0 0 18px;
+  margin: 0 0 18px;
+  border-bottom: 1px solid rgba(219, 148, 26, 0.25);
+}
+
+.filtro-grupo:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.filtro-grupo legend {
+  width: 100%;
+  color: #f5e7c8;
+  font-size: 15px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.filtro-opcion {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #d8d0bf;
+  font-size: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.filtro-opcion input {
+  accent-color: #db941a;
+  cursor: pointer;
+}
+
+.filtro-opcion span {
+  transition: color 0.2s ease;
+}
+
+.filtro-opcion:hover span {
+  color: #db941a;
+}
+
+.card-tienda {
+  position: relative;
+  min-height: 330px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f4ecdc;
+  color: #1b140d;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.28);
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-tienda:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.4);
+}
+
+.card-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+
+  background: #18130d;
+  color: #f5e7c8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 10px;
+  line-height: 1.1;
+}
+
+.card-tienda-img {
+  position: absolute;
+  top: 28px;
+  left: 24px;
+  width: 180px;
+  height: 170px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.card-tienda-img img {
+  width: 150px;
+  max-height: 170px;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 12px rgba(0, 0, 0, 0.25));
+}
+
+.texto-card h3 {
+  font-size: 17px;
+  color: #1b140d;
+  margin-bottom: 4px;
+}
+
+.texto-card p {
+  font-size: 12px;
+  color: #5c5146;
+}
+
+.card-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.card-precio p {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1b140d;
+  margin-bottom: 2px;
+}
+
+.card-precio small {
+  font-size: 10px;
+  color: #5c5146;
+}
+
+.btn-card-tienda {
+  padding: 8px 14px;
+  border-radius: 6px;
+
+  background: #111;
+  color: #f5e7c8;
+
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.btn-card-tienda:hover {
+  background: #db941a;
+  color: #111;
+  transform: translateY(-2px);
+}
+
+.card-brasil .card-tienda-img::before {
+  background-image: url("../assets/pattern/pattern-brasil.png");
+}

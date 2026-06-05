@@ -16,14 +16,8 @@
     />
     <link rel="stylesheet" href="../CSS/estilos_generales.css" />
     <link rel="stylesheet" href="../CSS/header.css" />
-    <link rel="stylesheet" href="CSS/banner.css" />
-    <link rel="stylesheet" href="CSS/section-productos.css" />
-    <link rel="stylesheet" href="CSS/descubre-cafe.css" />
-    <link rel="stylesheet" href="CSS/resenas.css" />
     <link rel="stylesheet" href="../CSS/footer.css" />
-    <link rel="stylesheet" href="CSS/explora.css" />
-    <link rel="stylesheet" href="CSS/registrate.css" />
-    <link rel="stylesheet" href="CSS/modal-card.css" />
+    <link rel="stylesheet" href="../CSS/tienda.css" />
     <!--<link rel="stylesheet" href="CSS/style.css" />-->
     <title>CAFETYPE</title>
   </head>
@@ -153,16 +147,196 @@
         </nav>
       </div>
     </header>
-    <main>
-      <section class="filtros">
-        
-      </section>
+    <main class="tienda-layout">
+      <aside class="filtros-tienda" aria-label="Filtros de productos">
+        <form class="form-filtros" id="form-filtros">
+          <h2 class="filtros-titulo">Filtros</h2>
+
+          <fieldset class="filtro-grupo">
+            <legend>Mostrar</legend>
+
+            <label class="filtro-opcion">
+              <input type="radio" name="tipo" value="todo" checked />
+              <span>Todo</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="radio" name="tipo" value="productos" />
+              <span>Productos</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="radio" name="tipo" value="promociones" />
+              <span>Promociones</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="filtro-grupo">
+            <legend>Origen</legend>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="origen" value="brasil" />
+              <span>Brasil</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="origen" value="colombia" />
+              <span>Colombia</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="origen" value="espana" />
+              <span>España</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="origen" value="francia" />
+              <span>Francia</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="origen" value="etiopia" />
+              <span>Etiopía</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="origen" value="guatemala" />
+              <span>Guatemala</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="filtro-grupo">
+            <legend>Tueste</legend>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="tueste" value="claro" />
+              <span>Claro</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="tueste" value="medio" />
+              <span>Medio</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="tueste" value="medio-oscuro" />
+              <span>Medio oscuro</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="tueste" value="oscuro" />
+              <span>Oscuro</span>
+            </label>
+          </fieldset>
+
+          <fieldset class="filtro-grupo">
+            <legend>Perfil de sabor</legend>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="perfil" value="intenso" />
+              <span>Intenso</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="perfil" value="balanceado" />
+              <span>Balanceado</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="perfil" value="afrutado" />
+              <span>Afrutado</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="perfil" value="achocolatado" />
+              <span>Achocolatado</span>
+            </label>
+
+            <label class="filtro-opcion">
+              <input type="checkbox" name="perfil" value="floral" />
+              <span>Floral</span>
+            </label>
+          </fieldset>
+        </form>
+      </aside>
+
       <section class="tienda-productos">
+        <article class="card-tienda">
+          <span class="card-badge">Tueste<br />Medio</span>
 
+          <div class="card-tienda-img">
+            <img
+              src="../assets/cards/cafe-brasil.png"
+              alt="Café Brasil Selvático"
+            />
+          </div>
+
+          <div class="texto-card">
+            <h3>Brasil Selvático</h3>
+            <p>Cerrado Mineiro · 1kg</p>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-precio">
+              <p>$30.000</p>
+              <small>3 x $10.000 sin interés</small>
+            </div>
+
+            <a href="#" class="btn-card-tienda">Agregar al carrito</a>
+          </div>
+        </article>
+
+        <article class="card-tienda">
+          <span class="card-badge">Tueste<br />Medio</span>
+
+          <div class="card-tienda-img">
+            <img
+              src="../assets/cards/cafe-colombia.png"
+              alt="Café Colombia Supremo"
+            />
+          </div>
+
+          <div class="texto-card">
+            <h3>Colombia Supremo</h3>
+            <p>Huila Alta · 1kg</p>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-precio">
+              <p>$32.000</p>
+              <small>3 x $10.667 sin interés</small>
+            </div>
+
+            <a href="#" class="btn-card-tienda">Agregar al carrito</a>
+          </div>
+        </article>
+
+        <article class="card-tienda">
+          <span class="card-badge">Tueste<br />Oscuro</span>
+
+          <div class="card-tienda-img">
+            <img
+              src="../assets/cards/cafe-espana.png"
+              alt="Café España Reserva"
+            />
+          </div>
+
+          <div class="texto-card">
+            <h3>España Reserva</h3>
+            <p>Madrid Reserva · 1kg</p>
+          </div>
+
+          <div class="card-footer">
+            <div class="card-precio">
+              <p>$31.000</p>
+              <small>3 x $10.333 sin interés</small>
+            </div>
+
+            <a href="#" class="btn-card-tienda">Agregar al carrito</a>
+          </div>
+        </article>
       </section>
-
     </main>
-
 
     <!--<footer class="footer">
       <div class="waveDivider">
@@ -183,11 +357,5 @@
         <p>&copy; 2026 <span>CAFETYPE</span>. Todos los derechos reservados.</p>
       </div>
     </footer>-->
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="./JS/swiper-banner.js"></script>
-    <script src="./JS/swiper-modal.js"></script>
-    <script src="./JS/card-modal.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
