@@ -28,8 +28,47 @@ gap: 10px;
 }
 
 h1 span {
-  color: #db941a;
+  color: #f6cb2e;
 }
+
+/*BARRA BUSCADORA*/
+
+.buscador-tienda{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 550px;
+  border: none;
+}
+
+.buscador-input{
+  width: 100%;
+  padding: 15px;
+  border-radius: 100px;
+  border: none;
+}
+
+.buscador-input:focus{
+border: none;
+outline: none;
+}
+
+.buscador-btn{
+  width: 40px;
+  height: 40px;
+  background-color: #f6cb2e;
+  border-radius: 50%;
+  padding: 0px;
+  border: none;
+  box-shadow: 0 0 12px rgba(246, 203, 46, 0.4);
+  cursor: pointer;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 /*NAVEGACION */
 
@@ -51,5 +90,5 @@ ul{
 
 .navegacion ul a:hover{
   opacity: 1;
-  color: #db941a;
+  color: #f6cb2e;
 }

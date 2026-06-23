@@ -91,7 +91,6 @@
 
   text-align: center;
   cursor: pointer;
-  transition: 0.3s ease;
 }
 
 .modulo-1 .btn-descubrir span {
@@ -111,18 +110,6 @@
   box-shadow: 0 0 12px rgba(246, 203, 46, 0.45);
 }
 
-/* // Animación del botón principal */
-.descubre-cafe:not(.activo) .btn-descubrir {
-  animation: btnCafeLlamado 2s ease-in-out infinite;
-}
-
-.descubre-cafe:not(.activo) .btn-descubrir:hover {
-  animation-play-state: paused;
-}
-
-.descubre-cafe.activo .btn-descubrir {
-  animation: none;
-}
 
 /* // Módulo 2 - Test */
 .modulo-2 {

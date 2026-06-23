@@ -33,7 +33,7 @@
       <div class="container-inf">
         <div class="logoPrincipal">
           <svg
-            fill="#db941a"
+            fill="#f6cb2e"
             viewBox="0 0 64 64"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -146,12 +146,44 @@
           </svg>
           <h1><span>CAFE</span>TYPE</h1>
         </div>
+        <form class="buscador-tienda" role="search">
+          <input
+            type="search"
+            class="buscador-input"
+            id="buscar-producto"
+            name="buscar"
+            placeholder="Buscar Productos"
+          />
+
+          <button
+            class="buscador-btn"
+            type="submit"
+            aria-label="Buscar producto"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M21 21L16.65 16.65M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </form>
         <nav class="navegacion">
           <ul>
             <li><a href="#productos">Productos</a></li>
+            <li><a href="./pages/tienda.html">Tienda</a></li>
             <li><a href="#descubre-cafe">Tu cafe ideal</a></li>
             <li><a href="#explora-cafetype">Contacto</a></li>
-            <li><a href="./pages/tienda.html">Tienda</a></li>
+            
           </ul>
         </nav>
       </div>
@@ -347,18 +379,18 @@
           </a>
         </div>
 
-        <!-- Café Francia -->
-        <div class="cards-cafe francia-elegant">
+        <!-- Café Italia -->
+        <div class="cards-cafe italia-elegant">
           <div class="container-img-card">
             <img
-              src="./assets/cards/cafe-francia.png"
-              alt="Café Francia Paris Elegant"
+              src="./assets/cards/cafe-italia.png"
+              alt="Café Italia Roma Elegant"
               class="img-card-cafe"
             />
 
             <button
               class="btn-action-modal open-modal-btn"
-              data-product-id="francia-elegant"
+              data-product-id="italia-elegant"
               type="button"
             >
               Ver más
@@ -368,13 +400,13 @@
           <div class="container-descripcion-card">
             <span class="producto-categoria">Café de especialidad</span>
 
-            <h3 class="producto-nombre">Francia Elegant</h3>
+            <h3 class="producto-nombre">Italia Elegant</h3>
 
-            <p class="producto-formato">Paris Elegant · 1kg</p>
+            <p class="producto-formato">Roma Elegant · 1kg</p>
 
             <div class="producto-tags">
               <span>Suave</span>
-              <span>Francia</span>
+              <span>Italia</span>
               <span>Dulce y suave</span>
             </div>
 
@@ -385,7 +417,7 @@
           </div>
 
           <a
-            href="./pages/tienda.html?producto=francia-elegant"
+            href="./pages/tienda.html?producto=italia-elegant"
             class="btn-card"
           >
             Comprar
@@ -916,7 +948,9 @@
               <div class="sabor-granos" data-sabor="dulzor"></div>
             </div>
           </div>
-          <a href="./pages/tienda.html" class="btn-modal-tienda"> Agregar al carrito </a>
+          <a href="./pages/tienda.html" class="btn-modal-tienda">
+            Agregar al carrito
+          </a>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ const btnVerCafe = document.querySelector(".btn-ver-cafe");
 const matchPorRespuesta = {
   intensidad: {
     suave: [
-      { cafeId: "francia-elegant", puntos: 2 },
+      { cafeId: "italia-elegant", puntos: 2 },
       { cafeId: "colombia-supremo", puntos: 1 },
     ],
 
@@ -27,7 +27,7 @@ const matchPorRespuesta = {
     "prensa-francesa": [
       { cafeId: "brasil-selvatico", puntos: 1 },
       { cafeId: "colombia-supremo", puntos: 1 },
-      { cafeId: "francia-elegant", puntos: 1 },
+      { cafeId: "italia-elegant", puntos: 1 },
     ],
 
     espresso: [
@@ -38,7 +38,7 @@ const matchPorRespuesta = {
 
     filtro: [
       { cafeId: "colombia-supremo", puntos: 1 },
-      { cafeId: "francia-elegant", puntos: 1 },
+      { cafeId: "italia-elegant", puntos: 1 },
     ],
 
     moka: [
@@ -62,7 +62,7 @@ const matchPorRespuesta = {
     ],
 
     "Dulce y Suave": [
-      { cafeId: "francia-elegant", puntos: 3 },
+      { cafeId: "italia-elegant", puntos: 3 },
     ],
   },
 };
@@ -87,7 +87,7 @@ function calcularMatch() {
     "brasil-selvatico": 0,
     "colombia-supremo": 0,
     "espana-reserva": 0,
-    "francia-elegant": 0,
+    "italia-elegant": 0,
   };
 
   // Sumamos puntos por intensidad

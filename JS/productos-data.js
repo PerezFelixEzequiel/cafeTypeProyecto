@@ -90,11 +90,11 @@ perfilSabores: {
 },
   },
 
-  "francia-elegant": {
+  "italia-elegant": {
     perfil: "Suave",
     familiaSabor:"Dulce y Suave",
-    nombre: "Francia Elegant",
-    origen: "Francia",
+    nombre: "italia Elegant",
+    origen: "italia",
     tueste: "Medio-claro",
     intensidad: "Media",
     acidez: "Media",
@@ -105,12 +105,12 @@ perfilSabores: {
     descripcionCorta:
       "Café delicado y refinado, con perfil suave, aromático y elegante.",
     descripcionLarga:
-  "Francia Elegant propone una experiencia suave, delicada y refinada, con un perfil dulce y armonioso. Su tueste medio-claro conserva un carácter aromático sutil, donde aparecen notas de almendra, vainilla y cacao suave, acompañadas por un cuerpo medio y una sensación ligera en boca. Es ideal para quienes buscan una taza elegante, amable y fácil de disfrutar.",
+  "Italia Elegant propone una experiencia suave, delicada y refinada, con un perfil dulce y armonioso. Su tueste medio-claro conserva un carácter aromático sutil, donde aparecen notas de almendra, vainilla y cacao suave, acompañadas por un cuerpo medio y una sensación ligera en boca. Es ideal para quienes buscan una taza elegante, amable y fácil de disfrutar.",
     precio: "$15.000",
-     imagenCard: "./assets/cards/cafe-francia.png",
+     imagenCard: "./assets/cards/cafe-italia.png",
     imagen: {
-      frente:"./assets/cards-modal/cafe-francia-frente.png",
-      dorso:"./assets/cards-modal/cafe-francia-dorso.png",
+      frente:"./assets/cards-modal/cafe-italia-frente.png",
+      dorso:"./assets/cards-modal/cafe-italia-dorso.png",
     },
     perfilSabores: {
   intensidad: 2,
