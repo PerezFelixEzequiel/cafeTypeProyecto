@@ -173,3 +173,16 @@ border-bottom: #00001a 1px solid;
   background-color: #ffdf9f;
   box-shadow: 0 2px 8px #fdd58679;
 }
+
+/*Icono de la tienda*/
+.btn-tienda {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.btn-tienda:hover {
+  filter: brightness(0) saturate(100%) invert(61%) sepia(67%) saturate(387%) hue-rotate(10deg) brightness(106%) contrast(122%);
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
