@@ -13,13 +13,13 @@ header .container-inf {
 /*LOGO PRINCIPAL*/
 
 .logoPrincipal{
-display: flex;  /*Cambiar a color #db941a*/
+display: flex;  
 flex-direction: row;
 gap: 10px;
 }
 
 .logoPrincipal svg{
-  width: 50px; /*Cambiar a color #db941a SVG*/
+  width: 50px; 
   height: 50px;
 }
 
@@ -30,6 +30,23 @@ gap: 10px;
 h1 span {
   color: #f6cb2e;
 }
+
+/*Boton de hamburguesa oculto en desktop*/
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  
+}
+
 
 /*BARRA BUSCADORA*/
 
@@ -91,4 +108,116 @@ ul{
 .navegacion ul a:hover{
   opacity: 1;
   color: #f6cb2e;
+}
+
+/*Media queries*/
+
+/*Movile*/
+
+/*Media queries*/
+
+/*Movile*/
+@media (min-width: 320px) and (max-width: 425px) {
+  header .container-inf {
+    display: flex;
+    flex-wrap: wrap; /*REVISAR ESTO */
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logoPrincipal {
+    align-items: center;
+    gap: 1px;
+  }
+
+  .logoPrincipal svg{
+    display: none;
+  }
+
+  .logoPrincipal h1 {
+    font-size: 30px;
+  }
+/*Navegacion */
+
+/*REVISAR ESTO como funciona el menu desplegable con el JS*/
+  .menu-toggle {
+    display: block;
+  }
+
+  .navegacion {
+    display: none;
+   order: 4;
+    width: 100%;
+
+    background: #18130d;
+    border: 1px solid rgba(246, 203, 46, 0.25);
+    border-radius: 12px;
+    padding: 18px;
+  }
+
+  .navegacion.active {
+    display: block;
+  }
+
+  .navegacion ul {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navegacion ul a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  /* Buscador abajo del logo y hamburguesa */
+  .buscador-tienda {
+    width: 100%;
+    order: 3;
+    position: relative;
+    display: flex; /*REVISAR ESTO */
+  }
+
+  .buscador-input {
+    width: 100%;
+    padding: 14px 52px 14px 16px;
+    border-radius: 100px;
+    border: none;
+  }
+
+  .buscador-input:focus {
+    outline: none; /*REVISAR ESTO */
+  }
+
+  /* Lupa dentro del input */
+  .buscador-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%); /*REVISAR ESTO */
+
+    width: 36px;
+    height: 36px;
+
+    background: none;
+    color: #f6cb2e ;
+
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(246, 203, 46, 0.35);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+  }
+
+  .buscador-btn svg {
+    width: 18px;
+    height: 18px;
+  }
 }

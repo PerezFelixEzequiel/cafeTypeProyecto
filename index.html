@@ -146,6 +146,21 @@
           </svg>
           <h1><span>CAFE</span>TYPE</h1>
         </div>
+        <!-- Botón hamburguesa -->
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menú"
+          aria-controls="menu-principal"
+          aria-expanded="false"
+        >
+          <img
+            src="./assets/header/hamburger-menu.svg"
+            alt=""
+            aria-hidden="true"
+          />
+        </button>
+        <!--Barra Buscadora-->
         <form class="buscador-tienda" role="search">
           <input
             type="search"
@@ -177,7 +192,8 @@
             </svg>
           </button>
         </form>
-        <nav class="navegacion">
+        <!--Navegacion-->
+        <nav class="navegacion" id="menu-principal">
           <ul>
             <li><a href="#productos">Productos</a></li>
             <li><a href="./pages/tienda.html">Tienda</a></li>
@@ -961,6 +977,7 @@
     <script src="./JS/card-modal.js"></script>
     <script src="./JS/descubre-cafe.js"></script>
     <script src="./JS/match-cafe.js"></script>
+    <script src="./JS/menu-mobile.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
