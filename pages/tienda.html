@@ -155,11 +155,12 @@
       </div>
     </header>
     <main class="tienda-layout">
+      <!--filtros-->
       <aside class="filtros-tienda" aria-label="Filtros de productos">
         <form class="form-filtros" id="form-filtros">
           <fieldset class="filtro-grupo">
             <legend>Mostrar</legend>
-
+            <!--Filtros Generales-->
             <label class="filtro-opcion">
               <input type="radio" name="tipo" value="todo" checked />
               <span>Todo</span>
@@ -175,7 +176,7 @@
               <span>Promociones</span>
             </label>
           </fieldset>
-
+          <!--Filtros segun origen -->
           <fieldset class="filtro-grupo">
             <legend>Origen</legend>
 
@@ -195,27 +196,17 @@
             </label>
 
             <label class="filtro-opcion">
-              <input type="checkbox" name="origen" value="francia" />
-              <span>Francia</span>
-            </label>
-
-            <label class="filtro-opcion">
-              <input type="checkbox" name="origen" value="etiopia" />
-              <span>Etiopía</span>
-            </label>
-
-            <label class="filtro-opcion">
-              <input type="checkbox" name="origen" value="guatemala" />
-              <span>Guatemala</span>
+              <input type="checkbox" name="origen" value="italia" />
+              <span>Italia</span>
             </label>
           </fieldset>
-
+          <!--filtros segun tueste -->
           <fieldset class="filtro-grupo">
             <legend>Tueste</legend>
 
             <label class="filtro-opcion">
-              <input type="checkbox" name="tueste" value="claro" />
-              <span>Claro</span>
+              <input type="checkbox" name="tueste" value="medio-claro" />
+              <span>Medio Claro</span>
             </label>
 
             <label class="filtro-opcion">
@@ -233,41 +224,19 @@
               <span>Oscuro</span>
             </label>
           </fieldset>
-
-          <fieldset class="filtro-grupo">
-            <legend>Perfil de sabor</legend>
-
-            <label class="filtro-opcion">
-              <input type="checkbox" name="perfil" value="intenso" />
-              <span>Intenso</span>
-            </label>
-
-            <label class="filtro-opcion">
-              <input type="checkbox" name="perfil" value="balanceado" />
-              <span>Balanceado</span>
-            </label>
-
-            <label class="filtro-opcion">
-              <input type="checkbox" name="perfil" value="afrutado" />
-              <span>Afrutado</span>
-            </label>
-
-            <label class="filtro-opcion">
-              <input type="checkbox" name="perfil" value="achocolatado" />
-              <span>Achocolatado</span>
-            </label>
-
-            <label class="filtro-opcion">
-              <input type="checkbox" name="perfil" value="floral" />
-              <span>Floral</span>
-            </label>
-          </fieldset>
+          
         </form>
       </aside>
-
+      <!--seccion de Cards-->
       <section class="tienda-productos">
         <!--Cafe brasil-->
-        <article class="card-tienda">
+        <article
+          class="card-tienda"
+          data-tipo="productos"
+          data-origen="brasil"
+          data-tueste="medio-oscuro"
+          data-perfil="intenso"
+        >
           <div class="card-tienda-img">
             <img
               src="../assets/cards/cafe-brasil.png"
@@ -282,15 +251,21 @@
 
           <div class="card-footer">
             <div class="card-precio">
-              <p>$30.000</p>
-              <small>3 x $10.000 sin interés</small>
+              <p>$15.000</p>
+              <small>3 x $5.000 sin interés</small>
             </div>
 
             <a href="#" class="btn-card-tienda">Agregar al carrito</a>
           </div>
         </article>
         <!--Cafe Colombia -->
-        <article class="card-tienda">
+        <article
+          class="card-tienda"
+          data-tipo="productos"
+          data-origen="colombia"
+          data-tueste="medio"
+          data-perfil="equilibrado"
+        >
           <div class="card-tienda-img">
             <img
               src="../assets/cards/cafe-colombia.png"
@@ -305,15 +280,21 @@
 
           <div class="card-footer">
             <div class="card-precio">
-              <p>$32.000</p>
-              <small>3 x $10.667 sin interés</small>
+              <p>$10.000</p>
+              <small>3 x $3.250 sin interés</small>
             </div>
 
             <a href="#" class="btn-card-tienda">Agregar al carrito</a>
           </div>
         </article>
         <!--Cafe Espana -->
-        <article class="card-tienda">
+        <article
+          class="card-tienda"
+          data-tipo="productos"
+          data-origen="espana"
+          data-tueste="oscuro"
+          data-perfil="intenso"
+        >
           <div class="card-tienda-img">
             <img
               src="../assets/cards/cafe-espana.png"
@@ -328,15 +309,21 @@
 
           <div class="card-footer">
             <div class="card-precio">
-              <p>$31.000</p>
-              <small>3 x $10.333 sin interés</small>
+              <p>$12.500</p>
+              <small>3 x $4.200 sin interés</small>
             </div>
 
             <a href="#" class="btn-card-tienda">Agregar al carrito</a>
           </div>
         </article>
         <!--Cafe Italia -->
-        <article class="card-tienda">
+        <article
+          class="card-tienda"
+          data-tipo="productos"
+          data-origen="italia"
+          data-tueste="medio-claro"
+          data-perfil="suave"
+        >
           <div class="card-tienda-img">
             <img
               src="../assets/cards/cafe-italia.png"
@@ -351,34 +338,46 @@
 
           <div class="card-footer">
             <div class="card-precio">
-              <p>$31.000</p>
-              <small>3 x $10.333 sin interés</small>
+              <p>$15.000</p>
+              <small>3 x $5.000 sin interés</small>
             </div>
 
             <a href="#" class="btn-card-tienda">Agregar al carrito</a>
           </div>
         </article>
         <!--Euro Combo -->
-        <article class="card-tienda card-combo">
+        <article
+          class="card-tienda card-combo"
+          data-tipo="promociones"
+          data-origen="espana italia"
+          data-tueste="oscuro medio-claro"
+          data-perfil="intenso suave"
+        >
           <div class="card-tienda-img">
             <img src="../assets/tienda/euro-combo.png" alt="Euro Combo" />
           </div>
 
           <div class="texto-card">
             <h3>Euro Combo</h3>
-            <p>Madrid Reserva · 1kg</p>
+            <p>Roma Reserva + Madrid Reserva · 1kg</p>
           </div>
 
           <div class="card-footer">
             <div class="card-precio">
-              <p>$31.000</p>
-              <small>3 x $10.333 sin interés</small>
+              <p>$25.000</p>
+              <small>3 x $8.300 sin interés</small>
             </div>
             <a href="#" class="btn-card-tienda">Agregar al carrito</a>
           </div>
         </article>
         <!--Latin Combo-->
-        <article class="card-tienda card-combo">
+        <article
+          class="card-tienda card-combo"
+          data-tipo="promociones"
+          data-origen="brasil colombia"
+          data-tueste="medio-oscuro medio"
+          data-perfil="intenso equilibrado"
+        >
           <div class="card-tienda-img">
             <img
               src="../assets/tienda/latin-combo.png"
@@ -389,13 +388,13 @@
 
           <div class="texto-card">
             <h3>Latin Combo</h3>
-            <p>Madrid Reserva · 1kg</p>
+            <p>Huila Alta + Cerrado Mineiro . 1kg</p>
           </div>
 
           <div class="card-footer">
             <div class="card-precio">
-              <p>$31.000</p>
-              <small>3 x $10.333 sin interés</small>
+              <p>$22.500</p>
+              <small>3 x $7.500 sin interés</small>
             </div>
 
             <a href="#" class="btn-card-tienda">Agregar al carrito</a>
@@ -403,8 +402,8 @@
         </article>
       </section>
     </main>
-
-    <!--<footer class="footer">
+    <!--Pie de pagina-->
+    <footer class="footer">
       <div class="waveDivider">
         <svg viewBox="0 0 1440 180" preserveAspectRatio="none">
           <path
@@ -422,6 +421,7 @@
       <div class="containerInf footer_content">
         <p>&copy; 2026 <span>CAFETYPE</span>. Todos los derechos reservados.</p>
       </div>
-    </footer>-->
+    </footer>
+    <script src="../JS/tienda-filtros.js"></script>
   </body>
 </html>

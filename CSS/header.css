@@ -117,7 +117,7 @@ ul{
 /*Media queries*/
 
 /*Movile*/
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 1200px) {
   header .container-inf {
     display: flex;
     flex-wrap: wrap; /*REVISAR ESTO */
