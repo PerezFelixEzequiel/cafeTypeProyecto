@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../CSS/header.css" />
     <link rel="stylesheet" href="../CSS/footer.css" />
     <link rel="stylesheet" href="../CSS/tienda.css" />
+    <link rel="stylesheet" href="../CSS/modal-carrito.css" />
     <!--<link rel="stylesheet" href="CSS/style.css" />-->
     <title>CAFETYPE</title>
   </head>
@@ -224,7 +225,6 @@
               <span>Oscuro</span>
             </label>
           </fieldset>
-          
         </form>
       </aside>
       <!--seccion de Cards-->
@@ -422,6 +422,59 @@
         <p>&copy; 2026 <span>CAFETYPE</span>. Todos los derechos reservados.</p>
       </div>
     </footer>
+    <!--MODAL CARRITO-->
+    <div class="modal-carrito">
+      <button id="close-carrito-btn" class="close" type="button">
+        &times;
+      </button>
+      <div class="modal-carrito-content">
+        <ul class="carrito-items">
+          <li class="item-carrito">
+            <div class="item-carrito-detalle">
+              <img
+                src="../assets/cards/cafe-brasil.png"
+                alt="Café Brasil Selvático"
+                class="img-carrito-item"
+              />
+
+              <div class="item-carrito-info">
+                <p>Café Brasil Selvático</p>
+                <div class="cantidad-control">
+                  <button
+                    class="btn-cantidad"
+                    type="button"
+                    aria-label="Disminuir cantidad"
+                  >
+                    -
+                  </button>
+
+                  <input
+                    class="input-cantidad"
+                    type="number"
+                    value="1"
+                    min="1"
+                    readonly
+                  />
+
+                  <button
+                    class="btn-cantidad"
+                    type="button"
+                    aria-label="Aumentar cantidad"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="item-carrito-precio">
+              <p>$15.000</p>
+            </div>
+          </li>
+        </ul>
+        <a class="btn-compra-carrito">Finalizar Compra</a>
+      </div>
+    </div>
     <script src="../JS/tienda-filtros.js"></script>
+    <script src="../JS/modal-carrito.js"></script>
   </body>
 </html>
